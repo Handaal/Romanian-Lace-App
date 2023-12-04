@@ -414,7 +414,7 @@ class PolicyPage extends StatelessWidget {
                                   children: [
                               
                                     Text(
-                                      "د/ أسماء محمود علي",
+                                      "د/ أسماء محمود سيد",
                                       style: TextStyle(
                                         color: kMainColor,
                                         fontSize: 19,

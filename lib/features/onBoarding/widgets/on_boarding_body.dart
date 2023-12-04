@@ -120,7 +120,7 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
                     GestureDetector(
                       onTap: () {
                         if (currentIndex == contents.length - 1) {
-                          Navigator.pushNamed(context, '/welcome');
+                          Navigator.pushNamed(context, '/BottomNavBar');
                         }
                         _controller?.nextPage(
                           duration: Duration(milliseconds: 100),

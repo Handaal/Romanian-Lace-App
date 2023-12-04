@@ -3,10 +3,6 @@
 import 'dart:io';
 
 import 'package:app_2/features/BottomNavBar/bottom_nav_bar.dart';
-import 'package:app_2/features/register/forget_password.dart';
-import 'package:app_2/features/register/login.dart';
-import 'package:app_2/features/register/signup.dart';
-import 'package:app_2/features/register/welcome_screen.dart';
 import 'package:app_2/features/splash/splash_view.dart';
 import 'package:app_2/screens/about.dart';
 import 'package:app_2/screens/adawat.dart';
@@ -67,9 +63,9 @@ class MyApp extends StatelessWidget {
         '/about' : (context) => const AboutPage(),
         '/policy' : (context) => const PolicyPage(),
         '/home' : (context) => const HomePage(),
-        '/login' : (context) => Login(),
-        '/signup' : (context) => SignUp(),
-        '/welcome' : (context) => const WelcomeScreen(),
+        // '/login' : (context) => Login(),
+        // '/signup' : (context) => SignUp(),
+        // '/welcome' : (context) => const WelcomeScreen(),
         '/lesson11' : (context) => const Lesson11(),
         '/lesson12' : (context) => const Lesson12(),
         '/lesson21' : (context) => const Lesson21(),
@@ -86,7 +82,7 @@ class MyApp extends StatelessWidget {
         '/lesson47' : (context) => const Lesson47(),
         '/lesson48' : (context) => const Lesson48(),
         '/lesson49' : (context) => const Lesson49(),
-        '/forgetpass' : (context) => ForgetPassword(),
+        // '/forgetpass' : (context) => ForgetPassword(),
       },
     );
   }
