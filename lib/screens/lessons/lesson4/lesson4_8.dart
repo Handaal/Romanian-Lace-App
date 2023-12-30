@@ -3,6 +3,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Lesson48 extends StatefulWidget {
@@ -46,7 +47,7 @@ class _Lesson48State extends State<Lesson48> {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(8),
             child: Container(
-              height: 1.0,
+              height: 1.0.h,
               color: Colors.grey.withOpacity(0.5),
             )
           ),
@@ -56,7 +57,7 @@ class _Lesson48State extends State<Lesson48> {
               "غرزة العجلة",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                fontSize: 21.sp,
               ),
             ),
           ),
@@ -87,7 +88,7 @@ class _Lesson48State extends State<Lesson48> {
                           width: SizeConfig.defaultSize! * 38,
                           decoration: BoxDecoration(
                             color: secondColor,
-                            borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15.w),
                           ),
                           child: Column(
                             children: [
@@ -102,7 +103,7 @@ class _Lesson48State extends State<Lesson48> {
                                   "هي غرزة ثريه جداً وجميلة في مساحات الفراغ الكبير ويتم تنفيذها عن طريق عمل صفوف مزدوجة متوازية من الخيوط بزاوية (45 درجه)، ثم يتم عمل صف يتقاطع مع الصفوف المتوازية، بعد ذلك الرجوع الى نقطة البداية لتمرير الابرة أسفل الصفوف المزدوجة لعمل عجل من الخيوط ويستمر هذا حتى ملئ كل المساحة كما بالصورة",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 17,
+                                    fontSize: 15.sp,
                                     fontWeight: FontWeight.bold,
                                                                 
                                   ),
@@ -126,7 +127,7 @@ class _Lesson48State extends State<Lesson48> {
                                       fit: BoxFit.fill
                                     ),
                                     color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.w),
                                   ),
                                 ),
                               ),
@@ -169,7 +170,7 @@ class _Lesson48State extends State<Lesson48> {
                                         child: Text(
                                           ":فيديو توضيحي للغرزة",
                                           style: TextStyle(
-                                            fontSize: 18,
+                                            fontSize: 16.sp,
                                             fontWeight: FontWeight.bold,
                                             color: kMainColor,
                                           ),
@@ -201,13 +202,13 @@ class _Lesson48State extends State<Lesson48> {
                         width: SizeConfig.defaultSize! * 25,
                         decoration: BoxDecoration(
                           color: firstColor,
-                          borderRadius: BorderRadius.circular(30),
+                          borderRadius: BorderRadius.circular(30.w),
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey.shade700,
-                              offset: Offset(4.0, 4.0),
-                              blurRadius: 5,
-                              spreadRadius: 1.0,
+                              offset: Offset(4.0.h, 4.0.w),
+                              blurRadius: 5.w,
+                              spreadRadius: 1.0.w,
                             )
                           ]
                         ),
@@ -215,7 +216,7 @@ class _Lesson48State extends State<Lesson48> {
                           child: Text(
                             "Wheel Stich / غرزة العجلة",
                             style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 18.sp,
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                             ),                           

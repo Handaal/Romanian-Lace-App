@@ -3,6 +3,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class FourthPage extends StatelessWidget {
   const FourthPage({super.key});
@@ -18,7 +19,7 @@ class FourthPage extends StatelessWidget {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(8),
             child: Container(
-              height: 1.0,
+              height: 1.0.h,
               color: Colors.grey.withOpacity(0.5),
             )
           ),
@@ -28,7 +29,7 @@ class FourthPage extends StatelessWidget {
               "خطوات تنفيذ اللاسيه الروماني",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                fontSize: 20.sp,
               ),
             ),
           ),
@@ -55,13 +56,13 @@ class FourthPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 37,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(40),
+                            borderRadius: BorderRadius.circular(40.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 15.0,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 15.0.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -74,7 +75,7 @@ class FourthPage extends StatelessWidget {
                                   "خطوات تنفيذ اللاسيه الروماني",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 17,
+                                    fontSize: 16.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -95,7 +96,7 @@ class FourthPage extends StatelessWidget {
                                     fit: BoxFit.fill,
                                   ),
                                   color: Colors.transparent,
-                                  borderRadius: BorderRadius.circular(15),
+                                  borderRadius: BorderRadius.circular(15.w),
                                 ),
                               ),
                               
@@ -113,13 +114,13 @@ class FourthPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 20,
                           decoration: BoxDecoration(
                             color: thirdColor,
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(30.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 5,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 5.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -127,7 +128,7 @@ class FourthPage extends StatelessWidget {
                             child: Text(
                               "الدرس الثالث",
                               style: TextStyle(
-                                fontSize: 22,
+                                fontSize: 19.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           
@@ -155,13 +156,13 @@ class FourthPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 35,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(20.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 15.0,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 15.0.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -174,19 +175,19 @@ class FourthPage extends StatelessWidget {
                                   "التعرف على كيفية إعداد شريط اللاسيه الروماني",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(top: 5, left: 60, right: 10),
+                                padding: const EdgeInsets.only(top: 5, left: 67, right: 10),
                                 child: Text(
                                   "خطوات تنفيذ (تثبيت) اللاسيه الروماني",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -198,7 +199,7 @@ class FourthPage extends StatelessWidget {
                                   "التعرف على الشروط الواجب مراعاتها عند تنفيذ اللاسيه الروماني",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -217,13 +218,13 @@ class FourthPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 20,
                           decoration: BoxDecoration(
                             color: firstColor,
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(30.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 5,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 5.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -231,7 +232,7 @@ class FourthPage extends StatelessWidget {
                             child: Text(
                               "أهداف الدرس",
                               style: TextStyle(
-                                fontSize: 22,
+                                fontSize: 19.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           
@@ -259,13 +260,13 @@ class FourthPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 40,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(40),
+                            borderRadius: BorderRadius.circular(40.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 15.0,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 15.0.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -280,7 +281,7 @@ class FourthPage extends StatelessWidget {
                                   width: SizeConfig.defaultSize! * 38,
                                   decoration: BoxDecoration(
                                     color: secondColor,
-                                    borderRadius: BorderRadius.circular(20),
+                                    borderRadius: BorderRadius.circular(20.w),
                                   ),
                                 
                                   child: Stack(
@@ -297,14 +298,14 @@ class FourthPage extends StatelessWidget {
                                             width: SizeConfig.defaultSize! * 11,
                                             decoration: BoxDecoration(
                                               color: kMainColor,
-                                              borderRadius: BorderRadius.circular(15),
+                                              borderRadius: BorderRadius.circular(15.w),
                                             ),
                                             child: Center(
                                               child: Text(
                                                 "المزيد",
                                                 style: TextStyle(
                                                   color: Colors.white,
-                                                  fontSize: 17,
+                                                  fontSize: 15.sp,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
@@ -330,7 +331,7 @@ class FourthPage extends StatelessWidget {
                                                     child: Text(
                                                       "خطوات إعداد شريط اللاسيه الروماني",
                                                       style: TextStyle(
-                                                        fontSize: 18,
+                                                        fontSize: 16.sp,
                                                         fontWeight: FontWeight.bold,
                                                         color: kMainColor,
                                                       ),
@@ -359,7 +360,7 @@ class FourthPage extends StatelessWidget {
                                                   fit: BoxFit.fill
                                                 ),
                                                 color: Colors.transparent,
-                                                borderRadius: BorderRadius.circular(15),
+                                                borderRadius: BorderRadius.circular(15.w),
                                               ),
                                                                       
                                             ),
@@ -378,7 +379,7 @@ class FourthPage extends StatelessWidget {
                                   width: SizeConfig.defaultSize! * 38,
                                   decoration: BoxDecoration(
                                     color: secondColor,
-                                    borderRadius: BorderRadius.circular(20),
+                                    borderRadius: BorderRadius.circular(20.w),
                                   ),
                                 
                                   child: Stack(
@@ -395,14 +396,14 @@ class FourthPage extends StatelessWidget {
                                             width: SizeConfig.defaultSize! * 11,
                                             decoration: BoxDecoration(
                                               color: kMainColor,
-                                              borderRadius: BorderRadius.circular(15),
+                                              borderRadius: BorderRadius.circular(15.w),
                                             ),
                                             child: Center(
                                               child: Text(
                                                 "المزيد",
                                                 style: TextStyle(
                                                   color: Colors.white,
-                                                  fontSize: 17,
+                                                  fontSize: 15.sp,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
@@ -428,7 +429,7 @@ class FourthPage extends StatelessWidget {
                                                     child: Text(
                                                       "خطوات تنفيذ (تثبيت) اللاسيه الروماني",
                                                       style: TextStyle(
-                                                        fontSize: 18,
+                                                        fontSize: 16.sp,
                                                         fontWeight: FontWeight.bold,
                                                         color: kMainColor,
                                                       ),
@@ -457,7 +458,7 @@ class FourthPage extends StatelessWidget {
                                                   fit: BoxFit.fill
                                                 ),
                                                 color: Colors.transparent,
-                                                borderRadius: BorderRadius.circular(15),
+                                                borderRadius: BorderRadius.circular(15.w),
                                               ),
                                                                       
                                             ),
@@ -476,7 +477,7 @@ class FourthPage extends StatelessWidget {
                                   width: SizeConfig.defaultSize! * 38,
                                   decoration: BoxDecoration(
                                     color: secondColor,
-                                    borderRadius: BorderRadius.circular(20),
+                                    borderRadius: BorderRadius.circular(20.w),
                                   ),
                                 
                                   child: Stack(
@@ -493,14 +494,14 @@ class FourthPage extends StatelessWidget {
                                             width: SizeConfig.defaultSize! * 11,
                                             decoration: BoxDecoration(
                                               color: kMainColor,
-                                              borderRadius: BorderRadius.circular(15),
+                                              borderRadius: BorderRadius.circular(15.w),
                                             ),
                                             child: Center(
                                               child: Text(
                                                 "المزيد",
                                                 style: TextStyle(
                                                   color: Colors.white,
-                                                  fontSize: 17,
+                                                  fontSize: 15.sp,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
@@ -526,7 +527,7 @@ class FourthPage extends StatelessWidget {
                                                     child: Text(
                                                       "الشروط الواجب مراعاتها عند تنفيذ اللاسيه الروماني",
                                                       style: TextStyle(
-                                                        fontSize: 18,
+                                                        fontSize: 16.sp,
                                                         fontWeight: FontWeight.bold,
                                                         color: kMainColor,
                                                       ),
@@ -555,7 +556,7 @@ class FourthPage extends StatelessWidget {
                                                   fit: BoxFit.fill
                                                 ),
                                                 color: Colors.transparent,
-                                                borderRadius: BorderRadius.circular(15),
+                                                borderRadius: BorderRadius.circular(15.w),
                                               ),
                                                                       
                                             ),
@@ -580,13 +581,13 @@ class FourthPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 20,
                           decoration: BoxDecoration(
                             color: firstColor,
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(30.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 5,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 5.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -594,7 +595,7 @@ class FourthPage extends StatelessWidget {
                             child: Text(
                               "موضوعات الدرس",
                               style: TextStyle(
-                                fontSize: 22,
+                                fontSize: 19.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           

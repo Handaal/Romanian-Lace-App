@@ -3,6 +3,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Lesson11 extends StatelessWidget {
   const Lesson11({super.key});
@@ -18,7 +19,7 @@ class Lesson11 extends StatelessWidget {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(8),
             child: Container(
-              height: 1.0,
+              height: 1.0.h,
               color: Colors.grey.withOpacity(0.5),
             )
           ),
@@ -28,7 +29,7 @@ class Lesson11 extends StatelessWidget {
               "التعريف باللاسيه الروماني",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                fontSize: 21.sp,
               ),
             ),
           ),
@@ -54,13 +55,13 @@ class Lesson11 extends StatelessWidget {
                       width: SizeConfig.defaultSize! * 37,
                       decoration: BoxDecoration(
                         color: secondColor,
-                        borderRadius: BorderRadius.circular(40),
+                        borderRadius: BorderRadius.circular(40.w),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.shade700,
-                            offset: Offset(4.0, 4.0),
-                            blurRadius: 15.0,
-                            spreadRadius: 1.0,
+                            offset: Offset(4.0.h, 4.0.w),
+                            blurRadius: 15.0.w,
+                            spreadRadius: 1.0.w,
                           )
                         ]
                       ),
@@ -71,7 +72,7 @@ class Lesson11 extends StatelessWidget {
                           "اللاسيه الروماني عبارة عن الزخرفة بأشرطة خاصة تسمى أشرطة اللاسيه وهذه الأشرطة يتم تثبيتها على خطوط الرسم الموجود في التصميم بحيث تترابط مع بعضها بواسطة غرزة العروة (الحواجز أو الأعمدة) التي تمر بالخيوط ثم يطرز عليها بغرزة الفستون وتنفذ المساحات الداخلية للتصميم بغرزة الدانتيلا الخاصة بالاسيه، وهذا الفن يستخدم في إحداث التزيين وعمل الزخارف للملابس والمفروشات المختلفة",
                           style: TextStyle(
                             color: kMainColor,
-                            fontSize: 17,
+                            fontSize: 15.sp,
                             fontWeight: FontWeight.bold,                             
                           ),
                           textAlign: TextAlign.justify,
@@ -89,13 +90,13 @@ class Lesson11 extends StatelessWidget {
                       width: SizeConfig.defaultSize! * 23,
                       decoration: BoxDecoration(
                         color: firstColor,
-                        borderRadius: BorderRadius.circular(30),
+                        borderRadius: BorderRadius.circular(30.w),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.shade700,
-                            offset: Offset(4.0, 4.0),
-                            blurRadius: 5,
-                            spreadRadius: 1.0,
+                            offset: Offset(4.0.h, 4.0.w),
+                            blurRadius: 5.w,
+                            spreadRadius: 1.0.w,
                           )
                         ]
                       ),
@@ -103,7 +104,7 @@ class Lesson11 extends StatelessWidget {
                         child: Text(
                           "فن اللاسيه الروماني",
                           style: TextStyle(
-                            fontSize: 22,
+                            fontSize: 19.sp,
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                           ),                           
@@ -128,7 +129,7 @@ class Lesson11 extends StatelessWidget {
                   fit: BoxFit.fill
                 ),
                 color: Colors.transparent,
-                borderRadius: BorderRadius.circular(15),
+                borderRadius: BorderRadius.circular(15.w),
               ),
 
             ),         

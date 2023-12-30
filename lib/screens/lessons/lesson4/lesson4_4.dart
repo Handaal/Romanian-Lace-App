@@ -3,6 +3,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Lesson44 extends StatefulWidget {
@@ -48,7 +49,7 @@ class _Lesson44State extends State<Lesson44> {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(8),
             child: Container(
-              height: 1.0,
+              height: 1.0.h,
               color: Colors.grey.withOpacity(0.5),
             )
           ),
@@ -58,7 +59,7 @@ class _Lesson44State extends State<Lesson44> {
               "غرزة العنكبوت",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                fontSize: 21.sp,
               ),
             ),
           ),
@@ -89,7 +90,7 @@ class _Lesson44State extends State<Lesson44> {
                           width: SizeConfig.defaultSize! * 38,
                           decoration: BoxDecoration(
                             color: secondColor,
-                            borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15.w),
                           ),
                           child: Column(
                             children: [
@@ -104,7 +105,7 @@ class _Lesson44State extends State<Lesson44> {
                                   "تعتمد غرزة العنكبوت في أساسها على عدد من الأقطار وعدد هذه الأقطار يعتمد على مساحة الفراغ المراد ملؤه، يلتقيان عبر المساحة التي يجب ملؤها على مسافات متساوية من بعضها البعض بطريقة تجعلهم يعبرون مركز الفراغ بحيث يكون الخيط الأول للقطر الأول يقسم الفراغ إلى نصفين ثم نعود بالخيط الى نقطة البداية ثم يتم غلق الخيط على طول حافة حبل اللاسيه للمسافة المطلوبة، ويتم تكرار هذه الخطوات حتى يتم ملئ مساحة الفراغ بالكامل، ثم يتم نسج العنكبوت ويتم ذلك عن طريق تمرير الابر بالتبادل تحت وفوق الأشعة المختلفة التي شكلتها الأعمدة وهناك أنواع مختلف من غرز العنكبوت والابسط يظهر في الصورة التالية",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 17,
+                                    fontSize: 15.sp,
                                     fontWeight: FontWeight.bold,
                                                                 
                                   ),
@@ -128,7 +129,7 @@ class _Lesson44State extends State<Lesson44> {
                                       fit: BoxFit.fill
                                     ),
                                     color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.w),
                                   ),
                                 ),
                               ),
@@ -171,7 +172,7 @@ class _Lesson44State extends State<Lesson44> {
                                         child: Text(
                                           ":فيديو توضيحي للغرزة",
                                           style: TextStyle(
-                                            fontSize: 18,
+                                            fontSize: 16.sp,
                                             fontWeight: FontWeight.bold,
                                             color: kMainColor,
                                           ),
@@ -203,13 +204,13 @@ class _Lesson44State extends State<Lesson44> {
                         width: SizeConfig.defaultSize! * 23,
                         decoration: BoxDecoration(
                           color: firstColor,
-                          borderRadius: BorderRadius.circular(30),
+                          borderRadius: BorderRadius.circular(30.w),
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey.shade700,
-                              offset: Offset(4.0, 4.0),
-                              blurRadius: 5,
-                              spreadRadius: 1.0,
+                              offset: Offset(4.0.h, 4.0.w),
+                              blurRadius: 5.w,
+                              spreadRadius: 1.0.w,
                             )
                           ]
                         ),
@@ -217,7 +218,7 @@ class _Lesson44State extends State<Lesson44> {
                           child: Text(
                             "Spiders / غرزة العنكبوت",
                             style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 18.sp,
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                             ),                           

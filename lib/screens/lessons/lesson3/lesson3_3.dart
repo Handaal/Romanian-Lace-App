@@ -3,6 +3,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Lesson33 extends StatelessWidget {
   const Lesson33({super.key});
@@ -18,7 +19,7 @@ class Lesson33 extends StatelessWidget {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(8),
             child: Container(
-              height: 1.0,
+              height: 1.0.h,
               color: Colors.grey.withOpacity(0.5),
             )
           ),
@@ -28,7 +29,7 @@ class Lesson33 extends StatelessWidget {
               "خطوات تنفيذ اللاسيه الروماني",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                fontSize: 21.sp,
               ),
             ),
           ),
@@ -50,17 +51,17 @@ class Lesson33 extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 17, top: 45, right: 15),
                     child: Container(
-                      height: SizeConfig.defaultSize! * 148,
+                      height: SizeConfig.defaultSize! * 140,
                       width: SizeConfig.defaultSize! * 38,
                       decoration: BoxDecoration(
                         color: secondColor,
-                        borderRadius: BorderRadius.circular(40),
+                        borderRadius: BorderRadius.circular(40.w),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.shade700,
-                            offset: Offset(4.0, 4.0),
-                            blurRadius: 10.0,
-                            spreadRadius: 1.0,
+                            offset: Offset(4.0.h, 4.0.w),
+                            blurRadius: 10.0.w,
+                            spreadRadius: 1.0.w,
                           )
                         ]
                       ),
@@ -74,7 +75,7 @@ class Lesson33 extends StatelessWidget {
                               "هناك مجموعة من العوامل أو الاعتبارات التي يجب مراعاتها عند تنفيذ فن اللاسيه الروماني",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 18,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -88,7 +89,7 @@ class Lesson33 extends StatelessWidget {
                               "1-	إختيار التصميم الزخرفي الملائم للغرض من الاستخدام",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -102,7 +103,7 @@ class Lesson33 extends StatelessWidget {
                               "2-	إختيار خامة مناسبة من خامات التقوية",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -116,7 +117,7 @@ class Lesson33 extends StatelessWidget {
                               "3-	تثبيت التصميم على الخامة المقواة من الأطراف باستخدام السراجة لتجنب التأثير على معالم التصميم",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -130,7 +131,7 @@ class Lesson33 extends StatelessWidget {
                               "4-	أثناء تثبيت شريط اللاسيه على التصميم الورقي يتم الضغط على الزويا ليأخذ الشكل المطلوب",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -144,7 +145,7 @@ class Lesson33 extends StatelessWidget {
                               "5-	يراعى تعدد نقاط البداية والنهاية في بعض التصميمات",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -158,7 +159,7 @@ class Lesson33 extends StatelessWidget {
                               "6-	يراعى مناسبة سمك الخيط المستخدم في التثبيت مع سمك البطانة المستخدمة",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -172,7 +173,7 @@ class Lesson33 extends StatelessWidget {
                               "7-	تستخدم إبر تطريز رفيعة للمحافظة على الخيط من التنسيل أثناء التنفيذ",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -186,7 +187,7 @@ class Lesson33 extends StatelessWidget {
                               "8-	تستخدم في عملية تثبيت التصميم على الخامة المقواة خيوط حياكة عادية بلون مخالف للون خيط اللاسيه والخلفية لضمان عمليه الفك",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -200,7 +201,7 @@ class Lesson33 extends StatelessWidget {
                               "9-	يراعى أن تكون عمليةالتثبيت على حافتي شريط اللاسيه للحفاظ عليه من التلف",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -214,7 +215,7 @@ class Lesson33 extends StatelessWidget {
                               "10- يجب التأكد من أن عملية التثبيت تتضمن الخامة المقواة وورقة التصميم معاً",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -228,7 +229,7 @@ class Lesson33 extends StatelessWidget {
                               "11-	يراعى عدم عمل عقدة في خيط الكتون بارليه المستخدم في التنفيذ، حيث أن تثبيت بداية الخيط تكون داخل شريط اللاسيه بطريقة معكوسة من نفس المكان",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -242,7 +243,7 @@ class Lesson33 extends StatelessWidget {
                               "12-	يفضل أن تكون خيوط الكتون بارليه المستخدمة في التشبيك من نفس لون قيطان اللاسيه",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -256,7 +257,7 @@ class Lesson33 extends StatelessWidget {
                               "13-	أن تكون غرزة العروة أو الفستونات مشدودة وذلك للمحافظة على شكل التصميم بعد فكه عن طريق ضبط قوة شد هذه الغرزة أثناء تنفيذها",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -270,7 +271,7 @@ class Lesson33 extends StatelessWidget {
                               "14-	يتم البدء في تنفيذ أي غرزة من غرز اللاسيه من بداية تكوين الوحدة المراد تنفيذ الغرزة بها حيث يكون حافتي اللاسيه في أقرب نقطة لهما وبالتالي تبدأ عملية التنفيذ من الداخل للخارج",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -284,7 +285,7 @@ class Lesson33 extends StatelessWidget {
                               "15-	عند استخدام خيط متدرج في عمل غرز اللاسيه من المفضل البدء بالدرجة الغامقة ليتدرج اللون للفاتح ليظهر التصميم بشكل جذاب",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -298,7 +299,7 @@ class Lesson33 extends StatelessWidget {
                               "16-	أن يكون تنفيذ غرز اللاسيه في اتجاه واحد",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.justify,
@@ -319,13 +320,13 @@ class Lesson33 extends StatelessWidget {
                       width: SizeConfig.defaultSize! * 39,
                       decoration: BoxDecoration(
                         color: firstColor,
-                        borderRadius: BorderRadius.circular(30),
+                        borderRadius: BorderRadius.circular(30.w),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.shade700,
-                            offset: Offset(4.0, 4.0),
-                            blurRadius: 5,
-                            spreadRadius: 1.0,
+                            offset: Offset(4.0.h, 4.0.w),
+                            blurRadius: 5.w,
+                            spreadRadius: 1.0.w,
                           )
                         ]
                       ),
@@ -333,7 +334,7 @@ class Lesson33 extends StatelessWidget {
                         child: Text(
                           "الشروط الواجب مراعاتها عند تنفيذ فن اللاسيه",
                           style: TextStyle(
-                            fontSize: 22,
+                            fontSize: 19.sp,
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                           ),

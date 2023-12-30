@@ -3,6 +3,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SecondPage extends StatelessWidget {
   const SecondPage({super.key});
@@ -18,7 +19,7 @@ class SecondPage extends StatelessWidget {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(8),
             child: Container(
-              height: 1.0,
+              height: 1.0.w,
               color: Colors.grey.withOpacity(0.5),
             )
           ),
@@ -28,7 +29,7 @@ class SecondPage extends StatelessWidget {
               "التعريف باللاسيه الروماني",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                fontSize: 21.sp,
               ),
             ),
           ),
@@ -55,13 +56,13 @@ class SecondPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 37,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(40),
+                            borderRadius: BorderRadius.circular(40.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 15.0,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 15.0.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -74,7 +75,7 @@ class SecondPage extends StatelessWidget {
                                   "التعريف باللاسيه الروماني وتاريخه",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 17,
+                                    fontSize: 16.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -95,7 +96,7 @@ class SecondPage extends StatelessWidget {
                                     fit: BoxFit.fill,
                                   ),
                                   color: Colors.transparent,
-                                  borderRadius: BorderRadius.circular(15),
+                                  borderRadius: BorderRadius.circular(15.w),
                                 ),
                               ),
                               
@@ -113,13 +114,13 @@ class SecondPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 20,
                           decoration: BoxDecoration(
                             color: thirdColor,
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(30.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 5,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 5.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -127,7 +128,7 @@ class SecondPage extends StatelessWidget {
                             child: Text(
                               "الدرس الأول",
                               style: TextStyle(
-                                fontSize: 22,
+                                fontSize: 19.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           
@@ -155,13 +156,13 @@ class SecondPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 35,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(20.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 15.0,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 15.0.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -169,24 +170,24 @@ class SecondPage extends StatelessWidget {
                           child: Column(
                             children: [
                               Padding(
-                                padding: const EdgeInsets.only(top: 35, left: 118),
+                                padding: const EdgeInsets.only(top: 35, left: 110),
                                 child: Text(
                                   "التعريف بفن اللاسيه الروماني",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.5.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(left: 100, top: 3),
+                                padding: const EdgeInsets.only(left: 90, top: 3),
                                 child: Text(
                                   "شرح تاريخ فن اللاسيه الروماني",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.5.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -205,13 +206,13 @@ class SecondPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 20,
                           decoration: BoxDecoration(
                             color: firstColor,
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(30.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 5,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 5.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -219,7 +220,7 @@ class SecondPage extends StatelessWidget {
                             child: Text(
                               "أهداف الدرس",
                               style: TextStyle(
-                                fontSize: 22,
+                                fontSize: 19.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           
@@ -247,13 +248,13 @@ class SecondPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 40,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(40),
+                            borderRadius: BorderRadius.circular(40.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 15.0,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 15.0.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -268,7 +269,7 @@ class SecondPage extends StatelessWidget {
                                   width: SizeConfig.defaultSize! * 38,
                                   decoration: BoxDecoration(
                                     color: secondColor,
-                                    borderRadius: BorderRadius.circular(20),
+                                    borderRadius: BorderRadius.circular(20.w),
                                   ),
                                 
                                   child: Stack(
@@ -285,14 +286,14 @@ class SecondPage extends StatelessWidget {
                                             width: SizeConfig.defaultSize! * 11,
                                             decoration: BoxDecoration(
                                               color: kMainColor,
-                                              borderRadius: BorderRadius.circular(15),
+                                              borderRadius: BorderRadius.circular(15.w),
                                             ),
                                             child: Center(
                                               child: Text(
                                                 "المزيد",
                                                 style: TextStyle(
                                                   color: Colors.white,
-                                                  fontSize: 17,
+                                                  fontSize: 15.sp,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
@@ -318,7 +319,7 @@ class SecondPage extends StatelessWidget {
                                                     child: Text(
                                                       "فن اللاسيه الروماني",
                                                       style: TextStyle(
-                                                        fontSize: 19,
+                                                        fontSize: 17.sp,
                                                         fontWeight: FontWeight.bold,
                                                         color: kMainColor,
                                                       ),
@@ -331,7 +332,7 @@ class SecondPage extends StatelessWidget {
                                                     child: Text(
                                                       "اللاسيه الروماني عبارة عن الزخرفة بأشرطة خاصة تسمي أشرطة اللاسيه",
                                                       style: TextStyle(
-                                                        fontSize: 16,
+                                                        fontSize: 14.sp,
                                                         fontWeight: FontWeight.bold,
                                                         color: thirdColor,
                                                       ),
@@ -358,7 +359,7 @@ class SecondPage extends StatelessWidget {
                                                   fit: BoxFit.fill
                                                 ),
                                                 color: Colors.transparent,
-                                                borderRadius: BorderRadius.circular(15),
+                                                borderRadius: BorderRadius.circular(15.w),
                                               ),
                                                                       
                                             ),
@@ -377,7 +378,7 @@ class SecondPage extends StatelessWidget {
                                   width: SizeConfig.defaultSize! * 38,
                                   decoration: BoxDecoration(
                                     color: secondColor,
-                                    borderRadius: BorderRadius.circular(20),
+                                    borderRadius: BorderRadius.circular(20.w),
                                   ),
                                 
                                   child: Stack(
@@ -394,14 +395,14 @@ class SecondPage extends StatelessWidget {
                                             width: SizeConfig.defaultSize! * 11,
                                             decoration: BoxDecoration(
                                               color: kMainColor,
-                                              borderRadius: BorderRadius.circular(15),
+                                              borderRadius: BorderRadius.circular(15.w),
                                             ),
                                             child: Center(
                                               child: Text(
                                                 "المزيد",
                                                 style: TextStyle(
                                                   color: Colors.white,
-                                                  fontSize: 17,
+                                                  fontSize: 15.sp,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
@@ -427,7 +428,7 @@ class SecondPage extends StatelessWidget {
                                                     child: Text(
                                                       "شرح تاريخ فن اللاسيه الروماني",
                                                       style: TextStyle(
-                                                        fontSize: 19,
+                                                        fontSize: 17.sp,
                                                         fontWeight: FontWeight.bold,
                                                         color: kMainColor,
                                                       ),
@@ -440,7 +441,7 @@ class SecondPage extends StatelessWidget {
                                                     child: Text(
                                                       "انتشر فن الشرائط المجمعة (لاسيه) في جميع أنحاء العالم ",
                                                       style: TextStyle(
-                                                        fontSize: 16,
+                                                        fontSize: 14.sp,
                                                         fontWeight: FontWeight.bold,
                                                         color: thirdColor,
                                                       ),
@@ -467,7 +468,7 @@ class SecondPage extends StatelessWidget {
                                                   fit: BoxFit.fill
                                                 ),
                                                 color: Colors.transparent,
-                                                borderRadius: BorderRadius.circular(15),
+                                                borderRadius: BorderRadius.circular(15.w),
                                               ),
                                                                       
                                             ),
@@ -492,13 +493,13 @@ class SecondPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 20,
                           decoration: BoxDecoration(
                             color: firstColor,
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(30.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 5,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 5.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -506,7 +507,7 @@ class SecondPage extends StatelessWidget {
                             child: Text(
                               "موضوعات الدرس",
                               style: TextStyle(
-                                fontSize: 22,
+                                fontSize: 19.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           

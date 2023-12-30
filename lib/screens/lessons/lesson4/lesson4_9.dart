@@ -3,6 +3,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Lesson49 extends StatefulWidget {
@@ -47,7 +48,7 @@ class _Lesson49State extends State<Lesson49> {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(8),
             child: Container(
-              height: 1.0,
+              height: 1.0.h,
               color: Colors.grey.withOpacity(0.5),
             )
           ),
@@ -57,7 +58,7 @@ class _Lesson49State extends State<Lesson49> {
               "غرزة روسية بسيطة",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                fontSize: 21.sp,
               ),
             ),
           ),
@@ -86,7 +87,7 @@ class _Lesson49State extends State<Lesson49> {
                           width: SizeConfig.defaultSize! * 38,
                           decoration: BoxDecoration(
                             color: secondColor,
-                            borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15.w),
                           ),
                           child: Column(
                             children: [
@@ -101,7 +102,7 @@ class _Lesson49State extends State<Lesson49> {
                                   "هي غرزة بسيطة مناسبة لمسافات طويلة وضيقة داخل التصميم ويكون العمل فيها بشغل سلسلة من غرز العروة بحيث يتم تثبيت الخيط بإحكام في الجزء العلوي في الزاوية اليسرى ثم يتم تقديمها على الفضاء واحتجازها ضد النمط عن طريق الإبهام الايسر، ثم يتم دفع الإبر من خلال حبل اللاسيه إلى الجانب الأيمن من المساحة مع توجيه الإبر بشكل مباشر عبر حبل اللاسيه إلى الجانب الايسر، وعقد الخيط لأسفل مع الإبهام يجعل من المستحيل عمل الغرزة بشكل خاطئ لأن الإبرة لا تمر أبداً تحت الخيط المعلق في هذا الطريق",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 17,
+                                    fontSize: 15.sp,
                                     fontWeight: FontWeight.bold,
                                                                 
                                   ),
@@ -125,7 +126,7 @@ class _Lesson49State extends State<Lesson49> {
                                       fit: BoxFit.fill
                                     ),
                                     color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.w),
                                   ),
                                 ),
                               ),
@@ -167,7 +168,7 @@ class _Lesson49State extends State<Lesson49> {
                                         child: Text(
                                           ":فيديو توضيحي للغرزة",
                                           style: TextStyle(
-                                            fontSize: 18,
+                                            fontSize: 16.sp,
                                             fontWeight: FontWeight.bold,
                                             color: kMainColor,
                                           ),
@@ -199,13 +200,13 @@ class _Lesson49State extends State<Lesson49> {
                         width: SizeConfig.defaultSize! * 37,
                         decoration: BoxDecoration(
                           color: firstColor,
-                          borderRadius: BorderRadius.circular(30),
+                          borderRadius: BorderRadius.circular(30.w),
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey.shade700,
-                              offset: Offset(4.0, 4.0),
-                              blurRadius: 5,
-                              spreadRadius: 1.0,
+                              offset: Offset(4.0.h, 4.0.w),
+                              blurRadius: 5.w,
+                              spreadRadius: 1.0.w,
                             )
                           ]
                         ),
@@ -213,7 +214,7 @@ class _Lesson49State extends State<Lesson49> {
                           child: Text(
                             "Plain Russian Stich / غرزة روسية بسيطة",
                             style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 18.sp,
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                             ),                           

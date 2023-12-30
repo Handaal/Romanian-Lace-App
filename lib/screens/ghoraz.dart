@@ -3,6 +3,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ThirdPage extends StatelessWidget {
   const ThirdPage({super.key});
@@ -18,7 +19,7 @@ class ThirdPage extends StatelessWidget {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(8),
             child: Container(
-              height: 1.0,
+              height: 1.0.h,
               color: Colors.grey.withOpacity(0.5),
             )
           ),
@@ -28,7 +29,7 @@ class ThirdPage extends StatelessWidget {
               "الغرز والتقنيات المستخدمة",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                fontSize: 20.sp,
               ),
             ),
           ),
@@ -55,13 +56,13 @@ class ThirdPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 37,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(40),
+                            borderRadius: BorderRadius.circular(40.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 15.0,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 15.0.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -74,7 +75,7 @@ class ThirdPage extends StatelessWidget {
                                   "الغرز والتقنيات",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 17,
+                                    fontSize: 17.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -95,7 +96,7 @@ class ThirdPage extends StatelessWidget {
                                     fit: BoxFit.fill,
                                   ),
                                   color: Colors.transparent,
-                                  borderRadius: BorderRadius.circular(15),
+                                  borderRadius: BorderRadius.circular(15.w),
                                 ),
                               ),
                               
@@ -113,13 +114,13 @@ class ThirdPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 20,
                           decoration: BoxDecoration(
                             color: thirdColor,
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(30.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 5,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 5.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -127,7 +128,7 @@ class ThirdPage extends StatelessWidget {
                             child: Text(
                               "الدرس الرابع",
                               style: TextStyle(
-                                fontSize: 22,
+                                fontSize: 19.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           
@@ -155,13 +156,13 @@ class ThirdPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 35,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(20.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 15.0,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 15.0.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -175,7 +176,7 @@ class ThirdPage extends StatelessWidget {
                                   "تقارن بين أنواع غرز الاسيه",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -188,7 +189,7 @@ class ThirdPage extends StatelessWidget {
                                   "تميز بين خطوات عمل الغرز",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -201,7 +202,7 @@ class ThirdPage extends StatelessWidget {
                                   "تنفذ خطوات عمل الغرز بدقة",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -214,7 +215,7 @@ class ThirdPage extends StatelessWidget {
                                   "تستخدم ألوان الخيوط المناسبة لشكل الغرزة",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -227,7 +228,7 @@ class ThirdPage extends StatelessWidget {
                                   "تنهى الغرز والتقنيات بطريقة سليمة",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -247,13 +248,13 @@ class ThirdPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 20,
                           decoration: BoxDecoration(
                             color: firstColor,
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(30.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 5,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 5.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -261,7 +262,7 @@ class ThirdPage extends StatelessWidget {
                             child: Text(
                               "أهداف الدرس",
                               style: TextStyle(
-                                fontSize: 22,
+                                fontSize: 19.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           
@@ -289,13 +290,13 @@ class ThirdPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 38,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(20.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 15.0,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 15.0.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -316,7 +317,7 @@ class ThirdPage extends StatelessWidget {
                                         padding: const EdgeInsets.only(top: 10),
                                         child: Container(
                                           decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(20),
+                                            borderRadius: BorderRadius.circular(20.w),
                                             color: thirdColor,
                                           ),
                                           height: SizeConfig.defaultSize! * 6,
@@ -327,7 +328,7 @@ class ThirdPage extends StatelessWidget {
                                               Text(
                                                 "غرز الحشو",
                                                 style: TextStyle(
-                                                  fontSize: 18,
+                                                  fontSize: 17.sp,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                 ),
@@ -346,7 +347,7 @@ class ThirdPage extends StatelessWidget {
                                         padding: const EdgeInsets.only(top: 10),
                                         child: Container(
                                           decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(20),
+                                            borderRadius: BorderRadius.circular(20.w),
                                             color: thirdColor,
                                           ),
                                           height: SizeConfig.defaultSize! * 6,
@@ -357,7 +358,7 @@ class ThirdPage extends StatelessWidget {
                                               Text(
                                                 "غرزة الأعمدة",
                                                 style: TextStyle(
-                                                  fontSize: 18,
+                                                  fontSize: 17.sp,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                 ),
@@ -387,7 +388,7 @@ class ThirdPage extends StatelessWidget {
                                         padding: const EdgeInsets.only(top: 10),
                                         child: Container(
                                           decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(20),
+                                            borderRadius: BorderRadius.circular(20.w),
                                             color: thirdColor,
                                           ),
                                           height: SizeConfig.defaultSize! * 6,
@@ -398,7 +399,7 @@ class ThirdPage extends StatelessWidget {
                                               Text(
                                                 "غرزة العنكبوت",
                                                 style: TextStyle(
-                                                  fontSize: 18,
+                                                  fontSize: 17.sp,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                 ),
@@ -417,7 +418,7 @@ class ThirdPage extends StatelessWidget {
                                         padding: const EdgeInsets.only(top: 10),
                                         child: Container(
                                           decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(20),
+                                            borderRadius: BorderRadius.circular(20.w),
                                             color: thirdColor,
                                           ),
                                           height: SizeConfig.defaultSize! * 6,
@@ -428,7 +429,7 @@ class ThirdPage extends StatelessWidget {
                                               Text(
                                                 "غرزة بروسل",
                                                 style: TextStyle(
-                                                  fontSize: 18,
+                                                  fontSize: 17.sp,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                 ),
@@ -458,7 +459,7 @@ class ThirdPage extends StatelessWidget {
                                         padding: const EdgeInsets.only(top: 10),
                                         child: Container(
                                           decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(20),
+                                            borderRadius: BorderRadius.circular(20.w),
                                             color: thirdColor,
                                           ),
                                           height: SizeConfig.defaultSize! * 6,
@@ -469,7 +470,7 @@ class ThirdPage extends StatelessWidget {
                                               Text(
                                                 "الغرزة الاسبانية(هولي)",
                                                 style: TextStyle(
-                                                  fontSize: 18,
+                                                  fontSize: 17.sp,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                 ),
@@ -488,7 +489,7 @@ class ThirdPage extends StatelessWidget {
                                         padding: const EdgeInsets.only(top: 10),
                                         child: Container(
                                           decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(20),
+                                            borderRadius: BorderRadius.circular(20.w),
                                             color: thirdColor,
                                           ),
                                           height: SizeConfig.defaultSize! * 6,
@@ -499,7 +500,7 @@ class ThirdPage extends StatelessWidget {
                                               Text(
                                                 "غرزة الفنيسية",
                                                 style: TextStyle(
-                                                  fontSize: 18,
+                                                  fontSize: 17.sp,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                 ),
@@ -529,7 +530,7 @@ class ThirdPage extends StatelessWidget {
                                         padding: const EdgeInsets.only(top: 10),
                                         child: Container(
                                           decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(20),
+                                            borderRadius: BorderRadius.circular(20.w),
                                             color: thirdColor,
                                           ),
                                           height: SizeConfig.defaultSize! * 6,
@@ -540,7 +541,7 @@ class ThirdPage extends StatelessWidget {
                                               Text(
                                                 "غرزة العجلة",
                                                 style: TextStyle(
-                                                  fontSize: 18,
+                                                  fontSize: 17.sp,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                 ),
@@ -559,7 +560,7 @@ class ThirdPage extends StatelessWidget {
                                         padding: const EdgeInsets.only(top: 10),
                                         child: Container(
                                           decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(20),
+                                            borderRadius: BorderRadius.circular(20.w),
                                             color: thirdColor,
                                           ),
                                           height: SizeConfig.defaultSize! * 6,
@@ -570,7 +571,7 @@ class ThirdPage extends StatelessWidget {
                                               Text(
                                                 "غرزة انجلترا",
                                                 style: TextStyle(
-                                                  fontSize: 18,
+                                                  fontSize: 17.sp,
                                                   fontWeight: FontWeight.bold,
                                                   color: Colors.white,
                                                 ),
@@ -597,7 +598,7 @@ class ThirdPage extends StatelessWidget {
                                     padding: const EdgeInsets.only(top: 10, left: 170),
                                     child: Container(
                                       decoration: BoxDecoration(
-                                        borderRadius: BorderRadius.circular(20),
+                                        borderRadius: BorderRadius.circular(20.w),
                                         color: thirdColor,
                                       ),
                                       height: SizeConfig.defaultSize! * 6,
@@ -608,7 +609,7 @@ class ThirdPage extends StatelessWidget {
                                           Text(
                                             "غرزة روسية بسيطة",
                                             style: TextStyle(
-                                              fontSize: 18,
+                                              fontSize: 17.sp,
                                               fontWeight: FontWeight.bold,
                                               color: Colors.white,
                                             ),
@@ -635,13 +636,13 @@ class ThirdPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 20,
                           decoration: BoxDecoration(
                             color: firstColor,
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(30.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 5,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 5.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -649,7 +650,7 @@ class ThirdPage extends StatelessWidget {
                             child: Text(
                               "موضوعات الدرس",
                               style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 19.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           

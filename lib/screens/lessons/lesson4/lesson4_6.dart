@@ -3,6 +3,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Lesson46 extends StatefulWidget {
@@ -47,7 +48,7 @@ class _Lesson46State extends State<Lesson46> {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(8),
             child: Container(
-              height: 1.0,
+              height: 1.0.h,
               color: Colors.grey.withOpacity(0.5),
             )
           ),
@@ -57,7 +58,7 @@ class _Lesson46State extends State<Lesson46> {
               "الغرزة الاسبانية(هولي)",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                fontSize: 21.sp,
               ),
             ),
           ),
@@ -88,7 +89,7 @@ class _Lesson46State extends State<Lesson46> {
                           width: SizeConfig.defaultSize! * 38,
                           decoration: BoxDecoration(
                             color: secondColor,
-                            borderRadius: BorderRadius.circular(15),
+                            borderRadius: BorderRadius.circular(15.w),
                           ),
                           child: Column(
                             children: [
@@ -103,7 +104,7 @@ class _Lesson46State extends State<Lesson46> {
                                   "تعتبر من الغرز المتميزة من غرز اللاسيه، تعطي تأثير الخطوط المتوازية الافقية المتصلة، وتعطي نتائج ممتازة عندما تستخدم لملئ الخلفيات كما هو الحال في جميع غرز الحشوات يتم تنفيذ الغرزة عن طريق تثبيت الخيط في الزاوية العلوية اليسرى من الفراغ المراد ملؤه ثم يتم تمرير الابر من حافة حبل اللاسيه الايسر للجهة المطلوبة ثم يتم لف الابر تحت الخيط ويتم تكرار هذه العملية حتى يتم إنهاء الصف، ويختلف طول الغرزة على حسب ما يتناسب التصميم كما بالصورة",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 17,
+                                    fontSize: 15.sp,
                                     fontWeight: FontWeight.bold,
                                                                 
                                   ),
@@ -127,7 +128,7 @@ class _Lesson46State extends State<Lesson46> {
                                       fit: BoxFit.fill
                                     ),
                                     color: Colors.transparent,
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.w),
                                   ),
                                 ),
                               ),
@@ -170,7 +171,7 @@ class _Lesson46State extends State<Lesson46> {
                                         child: Text(
                                           ":فيديو توضيحي للغرزة",
                                           style: TextStyle(
-                                            fontSize: 18,
+                                            fontSize: 16.sp,
                                             fontWeight: FontWeight.bold,
                                             color: kMainColor,
                                           ),
@@ -202,13 +203,13 @@ class _Lesson46State extends State<Lesson46> {
                         width: SizeConfig.defaultSize! * 34,
                         decoration: BoxDecoration(
                           color: firstColor,
-                          borderRadius: BorderRadius.circular(30),
+                          borderRadius: BorderRadius.circular(30.w),
                           boxShadow: [
                             BoxShadow(
                               color: Colors.grey.shade700,
-                              offset: Offset(4.0, 4.0),
-                              blurRadius: 5,
-                              spreadRadius: 1.0,
+                              offset: Offset(4.0.h, 4.0.w),
+                              blurRadius: 5.w,
+                              spreadRadius: 1.0.w,
                             )
                           ]
                         ),
@@ -216,7 +217,7 @@ class _Lesson46State extends State<Lesson46> {
                           child: Text(
                             "Spanish Point Stich / الغرزة الاسبانية",
                             style: TextStyle(
-                              fontSize: 20,
+                              fontSize: 18.sp,
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                             ),                           

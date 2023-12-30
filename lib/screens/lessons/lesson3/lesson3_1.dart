@@ -3,6 +3,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class Lesson31 extends StatefulWidget {
@@ -45,7 +46,7 @@ class _Lesson31State extends State<Lesson31> {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(8),
             child: Container(
-              height: 1.0,
+              height: 1.0.h,
               color: Colors.grey.withOpacity(0.5),
             )
           ),
@@ -55,7 +56,7 @@ class _Lesson31State extends State<Lesson31> {
               "خطوات تنفيذ اللاسيه الروماني",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                fontSize: 21.sp,
               ),
             ),
           ),
@@ -71,17 +72,17 @@ class _Lesson31State extends State<Lesson31> {
             Padding(
               padding: const EdgeInsets.all(20.0),
               child: Container(
-                height: SizeConfig.defaultSize! * 15,
+                height: SizeConfig.defaultSize! * 13,
                 width: SizeConfig.defaultSize! * 30,
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(20.w),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.grey.shade700,
-                      offset: Offset(4.0, 4.0),
-                      blurRadius: 5.0,
-                      spreadRadius: 1.0,
+                      offset: Offset(4.0.h, 4.0.w),
+                      blurRadius: 5.0.w,
+                      spreadRadius: 1.0.w,
                     )
                   ]
                 ),
@@ -91,7 +92,7 @@ class _Lesson31State extends State<Lesson31> {
                     "شريط اللاسيه ينفذ الشريط باستخدام ابرة الكروشيه المناسبة للخيط المستخدم سواء كان مصنوع من القطن أو الصوف أو الحرير ثم تنفيذ بعض غرز الكروشيه",
                     style: TextStyle(
                       color: kMainColor,
-                      fontSize: 17,
+                      fontSize: 15.sp,
                       fontWeight: FontWeight.w600,
                     ),
                     textAlign: TextAlign.justify,
@@ -107,7 +108,7 @@ class _Lesson31State extends State<Lesson31> {
                 "مراحل إعداد شريط اللاسيه:",
                 style: TextStyle(
                   color: kMainColor,
-                  fontSize: 20,
+                  fontSize: 16.sp,
                   fontWeight: FontWeight.bold,
                 ),
                 textAlign: TextAlign.justify,
@@ -125,13 +126,13 @@ class _Lesson31State extends State<Lesson31> {
                 width: SizeConfig.defaultSize! * 30,
                 decoration: BoxDecoration(
                   color: thirdColor,
-                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(25), bottomRight: Radius.circular(25)),
+                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(25.w), bottomRight: Radius.circular(25.w)),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.grey.shade700,
-                      offset: Offset(4.0, 4.0),
-                      blurRadius: 10.0,
-                      spreadRadius: 1.0,
+                      offset: Offset(4.0.h, 4.0.w),
+                      blurRadius: 10.0.w,
+                      spreadRadius: 1.0.w,
                     )
                   ]
                 ),
@@ -140,7 +141,7 @@ class _Lesson31State extends State<Lesson31> {
                     "المرحلة الأولي",
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 20,
+                      fontSize: 18.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -158,18 +159,18 @@ class _Lesson31State extends State<Lesson31> {
                 width: SizeConfig.defaultSize! * 37,
                 decoration: BoxDecoration(
                   color: secondColor,
-                  borderRadius: BorderRadius.circular(20)
+                  borderRadius: BorderRadius.circular(20.w)
                 ),
                 child: Column(
                   children: [
 
                     Padding(
-                      padding: const EdgeInsets.only(top: 10, right: 10, left: 25),
+                      padding: const EdgeInsets.only(top: 10, right: 10, left: 55),
                       child: Text(
                         "عمل العقدة الأولى (المنزلقة) على إبرة الكروشيه",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.end,
@@ -177,12 +178,12 @@ class _Lesson31State extends State<Lesson31> {
                     ),
 
                     Padding(
-                      padding: const EdgeInsets.only(top: 10, right: 10, left: 95),
+                      padding: const EdgeInsets.only(top: 10, right: 10, left: 115),
                       child: Text(
                         "أولاً: وضع إبرة الكروشيه أمام الخيط",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.end,
@@ -195,7 +196,7 @@ class _Lesson31State extends State<Lesson31> {
                         "ثانياً: عمل لفة كاملة من الخيط حول الإبرة وبالتالي يصبح موجود عروة على الإبرة",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.justify,
@@ -204,12 +205,12 @@ class _Lesson31State extends State<Lesson31> {
                     ),
 
                     Padding(
-                      padding: const EdgeInsets.only(top: 7, right: 10, left: 15),
+                      padding: const EdgeInsets.only(top: 7, right: 10, left: 45),
                       child: Text(
                         "ثالثاً: سحب الخيط الملفوف من العروة على الإبرة",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.end,
@@ -217,12 +218,12 @@ class _Lesson31State extends State<Lesson31> {
                     ),
 
                     Padding(
-                      padding: const EdgeInsets.only(top: 7, right: 10, left: 75),
+                      padding: const EdgeInsets.only(top: 7, right: 10, left: 100),
                       child: Text(
                         "رابعاً: سحب نهاية الخيط لإحكام العقدة",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.end,
@@ -230,12 +231,12 @@ class _Lesson31State extends State<Lesson31> {
                     ),
 
                     Padding(
-                      padding: const EdgeInsets.only(top: 3, right: 10, left: 255),
+                      padding: const EdgeInsets.only(top: 3, right: 10, left: 260),
                       child: Text(
                         ":كما بالشكل",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.end,
@@ -255,7 +256,7 @@ class _Lesson31State extends State<Lesson31> {
                           fit: BoxFit.fill
                         ),
                         color: Colors.transparent,
-                        borderRadius: BorderRadius.circular(15),
+                        borderRadius: BorderRadius.circular(15.w),
                       ),
                     ),
 
@@ -289,7 +290,7 @@ class _Lesson31State extends State<Lesson31> {
                     "المرحلة الثانية",
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 20,
+                      fontSize: 18.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -307,7 +308,7 @@ class _Lesson31State extends State<Lesson31> {
                 width: SizeConfig.defaultSize! * 37,
                 decoration: BoxDecoration(
                   color: secondColor,
-                  borderRadius: BorderRadius.circular(20)
+                  borderRadius: BorderRadius.circular(20.w)
                 ),
                 child: Column(
                   children: [
@@ -318,7 +319,7 @@ class _Lesson31State extends State<Lesson31> {
                         "عمل ثلاث غرز من السلسلة",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.end,
@@ -331,7 +332,7 @@ class _Lesson31State extends State<Lesson31> {
                         "أولاً: مسك الإبرة في اليد اليمنى",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.end,
@@ -344,7 +345,7 @@ class _Lesson31State extends State<Lesson31> {
                         "ثانياً: مسك نهاية العقدة المنزلقة بين إصبعي الابهام والوسطى لليد اليسرى إلى الأمام حول سن الإبرة",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.justify,
@@ -358,7 +359,7 @@ class _Lesson31State extends State<Lesson31> {
                         "ثالثاً: سحب الخيط بواسطة سن الإبرة ليمر من خلال العقدة الموجودة على الإبرة للحصول على السلسلة الأولى",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.justify,
@@ -372,7 +373,7 @@ class _Lesson31State extends State<Lesson31> {
                         "رابعاً: تكرار الخطوات السابقة للحصول على ثلاث غرز من غرز السلسلة",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.justify,
@@ -386,7 +387,7 @@ class _Lesson31State extends State<Lesson31> {
                         ":كما بالشكل",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.end,
@@ -406,7 +407,7 @@ class _Lesson31State extends State<Lesson31> {
                           fit: BoxFit.fill
                         ),
                         color: Colors.transparent,
-                        borderRadius: BorderRadius.circular(15),
+                        borderRadius: BorderRadius.circular(15.w),
                       ),
                     ),
                     
@@ -426,13 +427,13 @@ class _Lesson31State extends State<Lesson31> {
                 width: SizeConfig.defaultSize! * 30,
                 decoration: BoxDecoration(
                   color: thirdColor,
-                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(25), bottomRight: Radius.circular(25)),
+                  borderRadius: BorderRadius.only(bottomLeft: Radius.circular(25.w), bottomRight: Radius.circular(25.w)),
                   boxShadow: [
                     BoxShadow(
                       color: Colors.grey.shade700,
-                      offset: Offset(4.0, 4.0),
-                      blurRadius: 10.0,
-                      spreadRadius: 1.0,
+                      offset: Offset(4.0.h, 4.0.w),
+                      blurRadius: 10.0.w,
+                      spreadRadius: 1.0.w,
                     )
                   ]
                 ),
@@ -441,7 +442,7 @@ class _Lesson31State extends State<Lesson31> {
                     "المرحلة الثالثة",
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 20,
+                      fontSize: 18.sp,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
@@ -455,11 +456,11 @@ class _Lesson31State extends State<Lesson31> {
 
             Center(
               child: Container(
-                height: SizeConfig.defaultSize! * 250,
+                height: SizeConfig.defaultSize! * 230,
                 width: SizeConfig.defaultSize! * 37,
                 decoration: BoxDecoration(
                   color: secondColor,
-                  borderRadius: BorderRadius.circular(20)
+                  borderRadius: BorderRadius.circular(20.w)
                 ),
                 child: Column(
                   children: [
@@ -470,7 +471,7 @@ class _Lesson31State extends State<Lesson31> {
                         "الحصول على شريط اللاسيه",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.end,
@@ -483,7 +484,7 @@ class _Lesson31State extends State<Lesson31> {
                         "أولاً: إدخال سن الإبرة في الغرزتين اللتين تم تنفيذهما وبالتالي يصبح موجود على الإبرة ثلاث عراوي كما بالشكل",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.justify,
@@ -504,7 +505,7 @@ class _Lesson31State extends State<Lesson31> {
                           fit: BoxFit.fill
                         ),
                         color: Colors.transparent,
-                        borderRadius: BorderRadius.circular(15),
+                        borderRadius: BorderRadius.circular(15.w),
                       ),
                     ),
 
@@ -514,7 +515,7 @@ class _Lesson31State extends State<Lesson31> {
                         "ثانياً: لف الخيط على الإبرة",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.end,
@@ -527,7 +528,7 @@ class _Lesson31State extends State<Lesson31> {
                         "ثالثاً: سحب الخيط الملفوف على الإبرة ليمر من خلال الغرزتين التين تم إدخال سن الإبرة فيهما فيصبح موجود على الإبرة غرزة واحدة كما هو موضح بالشكل",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.justify,
@@ -548,7 +549,7 @@ class _Lesson31State extends State<Lesson31> {
                           fit: BoxFit.fill
                         ),
                         color: Colors.transparent,
-                        borderRadius: BorderRadius.circular(15),
+                        borderRadius: BorderRadius.circular(15.w),
                       ),
                     ),
 
@@ -558,7 +559,7 @@ class _Lesson31State extends State<Lesson31> {
                         "رابعاً: تدوير الشغل للخلف",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.end,
@@ -571,7 +572,7 @@ class _Lesson31State extends State<Lesson31> {
                         "خامسا: بعد تدوير الشغل للخلف يتم إدخال سن الإبرة في الغرزتين ولكن من أسفل بحيث يصبح على الإبرة ثلاث غرز",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.justify,
@@ -585,7 +586,7 @@ class _Lesson31State extends State<Lesson31> {
                         "سادسا: لف الخيط على الإبرة",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.end,
@@ -598,7 +599,7 @@ class _Lesson31State extends State<Lesson31> {
                         "سابعا: سحب الخيط الملفوف على الإبرة ليمر من خلال الغرزتين السابقتين فيصبح على الإبرة غرزتين",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.justify,
@@ -612,7 +613,7 @@ class _Lesson31State extends State<Lesson31> {
                         "ثامنا: لف الخيط على الإبرة",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.end,
@@ -625,7 +626,7 @@ class _Lesson31State extends State<Lesson31> {
                         "تاسعا: سحب الخيط الملفوف على الإبرة ليمر من خلال الغرزتين المتبقيتين على الإبرة فيصبح على الإبرة غرزة واحدة",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.justify,
@@ -639,7 +640,7 @@ class _Lesson31State extends State<Lesson31> {
                         "عاشرا: يتم تكرار الخطوات من الخامسة حتي العاشرة للحصول على الطول المطلوب من شريط اللاسيه",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.justify,
@@ -653,7 +654,7 @@ class _Lesson31State extends State<Lesson31> {
                         ":كما بالشكل",
                         style: TextStyle(
                           color: kMainColor,
-                          fontSize: 18,
+                          fontSize: 15.sp,
                           fontWeight: FontWeight.bold,
                         ),
                         textAlign: TextAlign.end,
@@ -673,7 +674,7 @@ class _Lesson31State extends State<Lesson31> {
                           fit: BoxFit.fill
                         ),
                         color: Colors.transparent,
-                        borderRadius: BorderRadius.circular(15),
+                        borderRadius: BorderRadius.circular(15.w),
                       ),
                     ),
 
@@ -717,7 +718,7 @@ class _Lesson31State extends State<Lesson31> {
                               child: Text(
                                 ":فيديو توضيحي لكيفية إعداد شريط اللاسيه",
                                 style: TextStyle(
-                                  fontSize: 18,
+                                  fontSize: 16.sp,
                                   fontWeight: FontWeight.bold,
                                   color: kMainColor,
                                 ),

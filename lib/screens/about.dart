@@ -3,6 +3,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AboutPage extends StatelessWidget {
   const AboutPage({super.key});
@@ -19,7 +20,7 @@ class AboutPage extends StatelessWidget {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(8),
             child: Container(
-              height: 1.0,
+              height: 1.0.h,
               color: Colors.grey.withOpacity(0.5),
             )
           ),
@@ -28,7 +29,7 @@ class AboutPage extends StatelessWidget {
               "عن التطبيق",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                fontSize: 22.sp,
               ),
             ),
           ),
@@ -62,7 +63,7 @@ class AboutPage extends StatelessWidget {
                   child: Text(
                     "تطبيق ذكي يهتم بمهارات تنفيذ مفروشات من اللاسيه الروماني لاكساب الخريجات مهارات التنفيذ يعرض التطبيق التعريف والخطوات والأدوات والخامات المستخدمة والغرز المستخدمة والتدريب علي انتاج المفروشات باستخدام فن اللاسيه الروماني",
                     style: TextStyle(
-                      fontSize: 19,
+                      fontSize: 18.sp,
                       fontWeight: FontWeight.bold,
                       color: kMainColor,
                     ),

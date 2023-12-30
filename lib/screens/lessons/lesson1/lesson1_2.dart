@@ -4,6 +4,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Lesson12 extends StatelessWidget {
   const Lesson12({super.key});
@@ -19,7 +20,7 @@ class Lesson12 extends StatelessWidget {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(8),
             child: Container(
-              height: 1.0,
+              height: 1.0.h,
               color: Colors.grey.withOpacity(0.5),
             )
           ),
@@ -29,7 +30,7 @@ class Lesson12 extends StatelessWidget {
               "التعريف باللاسيه الروماني",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                fontSize: 21.sp,
               ),
             ),
           ),
@@ -57,13 +58,13 @@ class Lesson12 extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 37,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(40),
+                            borderRadius: BorderRadius.circular(40.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 15.0,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 15.0.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -78,7 +79,7 @@ class Lesson12 extends StatelessWidget {
                                   width: SizeConfig.defaultSize! * 34,
                                   decoration: BoxDecoration(
                                     color: secondColor,
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.w),
                                   ),
                                   child: Padding(
                                     padding: const EdgeInsets.all(10.0),
@@ -86,7 +87,7 @@ class Lesson12 extends StatelessWidget {
                                       "اللاسيه الروماني عبارة عن الزخرفة بأشرطة خاصة تسمى أشرطة اللاسيه وهذه الأشرطة يتم تثبيتها على خطوط الرسم الموجود في التصميم بحيث تترابط مع بعضها بواسطة غرزة العروة (الحواجز أو الأعمدة) التي تمر بالخيوط ثم يطرز عليها بغرزة الفستون وتنفذ المساحات الداخلية للتصميم بغرزة الدانتيلا الخاصة بالاسيه، وهذا الفن يستخدم في إحداث التزيين وعمل الزخارف للملابس والمفروشات المختلفة",
                                       style: TextStyle(
                                         color: kMainColor,
-                                        fontSize: 17,
+                                        fontSize: 15.sp,
                                         fontWeight: FontWeight.bold,                             
                                       ),
                                       textAlign: TextAlign.justify,
@@ -103,7 +104,7 @@ class Lesson12 extends StatelessWidget {
                                   width: SizeConfig.defaultSize! * 34,
                                   decoration: BoxDecoration(
                                     color: secondColor,
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.w),
                                   ),
                                   child: Padding(
                                     padding: const EdgeInsets.all(10.0),
@@ -111,7 +112,7 @@ class Lesson12 extends StatelessWidget {
                                       "ظهرت البدايات الأولى لأسلوب اللاسيه الروماني الذي يجمع بواسطة غرزة التشبيك في عام 2130ق.م حيث ظهرت بعض المشغولات في الفن المصري القديم خلال الاسرة الثانية عشر ووجدت الشبكات المعقودة في الاسرة الثامنة عشر",
                                       style: TextStyle(
                                         color: kMainColor,
-                                        fontSize: 17,
+                                        fontSize: 15.sp,
                                         fontWeight: FontWeight.bold,                             
                                       ),
                                       textAlign: TextAlign.justify,
@@ -128,7 +129,7 @@ class Lesson12 extends StatelessWidget {
                                   width: SizeConfig.defaultSize! * 34,
                                   decoration: BoxDecoration(
                                     color: secondColor,
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.w),
                                   ),
                                   child: Padding(
                                     padding: const EdgeInsets.all(10.0),
@@ -136,7 +137,7 @@ class Lesson12 extends StatelessWidget {
                                       "وعثر على العديد من أغطية الرأس من الطراز المصري الروماني بجهه الفيوم التي يرجع تاريخها الى الفترة من القرن الثالث الى السابع قبل الميلاد والتي تتضمن الكثير من العقد المختلفة والتي تنتمي إلى أعمال اللاسيه الروماني، كذلك انتشر فن اللاسيه الروماني في مصر بداية من القرن التاسع عشر كموروث ثقافي وخاصة مع انتشار الجاليات الأرمنية والقبرصيه واليونانية بمصر",
                                       style: TextStyle(
                                         color: kMainColor,
-                                        fontSize: 17,
+                                        fontSize: 15.sp,
                                         fontWeight: FontWeight.bold,                             
                                       ),
                                       textAlign: TextAlign.justify,
@@ -153,7 +154,7 @@ class Lesson12 extends StatelessWidget {
                                   width: SizeConfig.defaultSize! * 34,
                                   decoration: BoxDecoration(
                                     color: secondColor,
-                                    borderRadius: BorderRadius.circular(15),
+                                    borderRadius: BorderRadius.circular(15.w),
                                   ),
                                   child: Padding(
                                     padding: const EdgeInsets.all(10.0),
@@ -161,7 +162,7 @@ class Lesson12 extends StatelessWidget {
                                       "بالرغم من وجود جدل حول أصل الأساليب الأولية لفن اللاسيه نظرا لانتشارها في العديد من حضارات الشرق القديمة الا ان الجميع يؤكد على وصول الأساليب الأولية والمواد الخاصة باللاسيه من مصر إلى بلاد المغرب العربي ثم إلى الأندلس (أسبانيا) بعد الفتح العربي، وبدخول هذه الأساليب إلى فينيسا وإلى قبرص تحولت فينسيا إلى أعظم مدن العالم في فن اللاسيه حيث تبلورت معالمه وتشكلت أهم الغرز المستعملة فيه كما استعملت شرائط الحرير الملون والخيوط المعدنية في انتاج مكملات للزي بالإضافة الى المفارش والستائر",
                                       style: TextStyle(
                                         color: kMainColor,
-                                        fontSize: 17,
+                                        fontSize: 15.sp,
                                         fontWeight: FontWeight.bold,
                                                                    
                                       ),
@@ -186,13 +187,13 @@ class Lesson12 extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 23,
                           decoration: BoxDecoration(
                             color: firstColor,
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(30.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 5,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 5.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -200,7 +201,7 @@ class Lesson12 extends StatelessWidget {
                             child: Text(
                               "تاريخ اللاسيه الروماني",
                               style: TextStyle(
-                                fontSize: 22,
+                                fontSize: 19.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           
@@ -224,7 +225,7 @@ class Lesson12 extends StatelessWidget {
                   child: Text(
                     "بعض المفارش المنفذة باللاسيه الروماني",
                     style: TextStyle(
-                      fontSize: 19,
+                      fontSize: 17.sp,
                       fontWeight: FontWeight.bold,
                       color: kMainColor,
                     ),
@@ -254,10 +255,11 @@ class Lesson12 extends StatelessWidget {
                             decoration: BoxDecoration(
                               image: DecorationImage(
                                 image: AssetImage("assets/images/123.png"),
-                                fit: BoxFit.fill
+                                fit: BoxFit.fill,
                               ),
                               color: Colors.transparent,
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(15.w),
+
                             ),
                           ),
                         ),
@@ -278,7 +280,7 @@ class Lesson12 extends StatelessWidget {
                                 fit: BoxFit.fill
                               ),
                               color: Colors.transparent,
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(15.w),
                             ),
                           ),
                         ),
@@ -299,7 +301,7 @@ class Lesson12 extends StatelessWidget {
                                 fit: BoxFit.fill
                               ),
                               color: Colors.transparent,
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(15.w),
                             ),
                           ),
                         ),

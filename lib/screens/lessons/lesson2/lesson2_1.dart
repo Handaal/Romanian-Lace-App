@@ -3,6 +3,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class Lesson21 extends StatelessWidget {
   const Lesson21({super.key});
@@ -18,7 +19,7 @@ class Lesson21 extends StatelessWidget {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(8),
             child: Container(
-              height: 1.0,
+              height: 1.0.h,
               color: Colors.grey.withOpacity(0.5),
             )
           ),
@@ -28,7 +29,7 @@ class Lesson21 extends StatelessWidget {
               "الأدوات والخامات المستخدمة",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                fontSize: 21.sp,
               ),
             ),
           ),
@@ -45,17 +46,17 @@ class Lesson21 extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.only(left: 12, top: 45, right: 8),
                     child: Container(
-                      height: SizeConfig.defaultSize! * 740,
+                      height: SizeConfig.defaultSize! * 720,
                       width: SizeConfig.defaultSize! * 39,
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(40),
+                        borderRadius: BorderRadius.circular(40.w),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.shade700,
-                            offset: Offset(4.0, 4.0),
-                            blurRadius: 15.0,
-                            spreadRadius: 1.0,
+                            offset: Offset(4.0.h, 4.0.w),
+                            blurRadius: 15.0.w,
+                            spreadRadius: 1.0.w,
                           )
                         ]
                       ),
@@ -70,14 +71,14 @@ class Lesson21 extends StatelessWidget {
                               width: SizeConfig.defaultSize! * 18,
                               decoration: BoxDecoration(
                                 color: thirdColor,
-                                borderRadius: BorderRadius.circular(15)
+                                borderRadius: BorderRadius.circular(15.w)
                               ),
                               child: Center(
                                 child: Text(
                                   ":التصميم الورقي",
                                   style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 19,
+                                    fontSize: 17.sp,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -96,7 +97,7 @@ class Lesson21 extends StatelessWidget {
                                     "عبارة عن ورقة مصمم عليها الرسم المراد تنفيذه كما في الشكل",
                                     style: TextStyle(
                                       color: kMainColor,
-                                      fontSize: 17,
+                                      fontSize: 15.sp,
                                       fontWeight: FontWeight.bold,                             
                                     ),
                                     textAlign: TextAlign.justify,
@@ -114,7 +115,7 @@ class Lesson21 extends StatelessWidget {
                                         fit: BoxFit.fill
                                       ),
                                       color: Colors.transparent,
-                                      borderRadius: BorderRadius.circular(15),
+                                      borderRadius: BorderRadius.circular(15.w),
                                     ),
                                   ),
                                 ),
@@ -130,14 +131,14 @@ class Lesson21 extends StatelessWidget {
                               width: SizeConfig.defaultSize! * 18,
                               decoration: BoxDecoration(
                                 color: thirdColor,
-                                borderRadius: BorderRadius.circular(15)
+                                borderRadius: BorderRadius.circular(15.w)
                               ),
                               child: Center(
                                 child: Text(
                                   ":الخيوط",
                                   style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 19,
+                                    fontSize: 17.sp,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -156,7 +157,7 @@ class Lesson21 extends StatelessWidget {
                                     "تعتبر الخيوط من الخامات الأساسية المؤثرة على جودة ونجاح القطعة لما لها من تأثير مباشر وفعال علة قوة تحمل اللاسيه وقد تطورت الخيوط المستخدمة تبعا للتطور التكنولوجي الذي طرا على الخيوط المستخدمة في صناعة النسيج نفسها. هناك مجموعة متنوعة من الخيوط المتاحة يمكن استخدامها، حيث كانت في الماضي تستخدم خيوط القطن الرفيعة أو الكتان أو الصوف",
                                     style: TextStyle(
                                       color: kMainColor,
-                                      fontSize: 17,
+                                      fontSize: 15.sp,
                                       fontWeight: FontWeight.bold,                             
                                     ),
                                     textAlign: TextAlign.justify,
@@ -170,7 +171,7 @@ class Lesson21 extends StatelessWidget {
                                     "ويباع الخيط في هيئة شلة ذات حجم معين يكون الخيط فيها ملفوفاً بصورة جاهزة، وتحسب الكمية الموجودة في كل شلة تبعاً للوزن وليس للطول. ويكون الوزن بالجرام-والأحجام الشائعة للشلات هي (25 أو 50) جرام – وسيتنوع طول الخيط الموجود في الكرة من نوعية خيط لأخرى، حسب سمك الخيط ذاته، ويباع الخيط أيضاً في شكل جدائل أو لفائف",
                                     style: TextStyle(
                                       color: kMainColor,
-                                      fontSize: 17,
+                                      fontSize: 15.sp,
                                       fontWeight: FontWeight.bold,                             
                                     ),
                                     textAlign: TextAlign.justify,
@@ -184,7 +185,7 @@ class Lesson21 extends StatelessWidget {
                                     "وكلما كان الخيط أملسا وناعما والبرمات فيه متوسطة كانت نتيجة اللاسيه أفضل، ومن أشهر أنواع الخيوط المستعملة في اللاسيه هي الخيوط القطنية وهي أكثر أنواع الخيوط صلابة وألوانها ثابته وتحفظ برونقها حتى بعد تعرضها لضوء الشمس والغسيل المتكرر",
                                     style: TextStyle(
                                       color: kMainColor,
-                                      fontSize: 17,
+                                      fontSize: 15.sp,
                                       fontWeight: FontWeight.bold,                             
                                     ),
                                     textAlign: TextAlign.justify,
@@ -202,7 +203,7 @@ class Lesson21 extends StatelessWidget {
                                         fit: BoxFit.fill
                                       ),
                                       color: Colors.transparent,
-                                      borderRadius: BorderRadius.circular(15),
+                                      borderRadius: BorderRadius.circular(15.w),
                                     ),
                                   ),
                                 ),
@@ -218,14 +219,14 @@ class Lesson21 extends StatelessWidget {
                               width: SizeConfig.defaultSize! * 18,
                               decoration: BoxDecoration(
                                 color: thirdColor,
-                                borderRadius: BorderRadius.circular(15)
+                                borderRadius: BorderRadius.circular(15.w)
                               ),
                               child: Center(
                                 child: Text(
                                   ":أنواع الخيوط",
                                   style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 19,
+                                    fontSize: 17.sp,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -242,13 +243,13 @@ class Lesson21 extends StatelessWidget {
                             width: SizeConfig.defaultSize! * 30,
                             decoration: BoxDecoration(
                               color: secondColor,
-                              borderRadius: BorderRadius.circular(30),
+                              borderRadius: BorderRadius.circular(30.w),
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.shade700,
-                                  offset: Offset(4.0, 4.0),
-                                  blurRadius: 5,
-                                  spreadRadius: 1.0,
+                                  offset: Offset(4.0.h, 4.0.w),
+                                  blurRadius: 5.w,
+                                  spreadRadius: 1.0.w,
                                 )
                               ]
                             ),
@@ -256,7 +257,7 @@ class Lesson21 extends StatelessWidget {
                               child: Text(
                                 "Moulin thread / خيوط المولونية",
                                 style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.bold,
                                   color: kMainColor,
                                 ),                           
@@ -274,7 +275,7 @@ class Lesson21 extends StatelessWidget {
                               "هي خيوط قطنية متوافرة في حزم أو شلل وهي ذات الخصلات الست يبلغ طول الخيط فيها ثمانية أمتار وكلمة مولونيه في الأصل كلمة فرنسية قديمة تعني (ناعم) وتتميز هذه الخيوط بإمكانية فصل خصلاتها حسب الرغبة وحاجة العمل أو حسب سمك النسيج المستخدم كما يمكن خلط ألوانها للحصول على ألوان جديدة",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,
                                                             
                               ),
@@ -297,7 +298,7 @@ class Lesson21 extends StatelessWidget {
                                 fit: BoxFit.fill
                               ),
                               color: Colors.transparent,
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(15.w),
                             ),
                           ),
                           
@@ -310,13 +311,13 @@ class Lesson21 extends StatelessWidget {
                             width: SizeConfig.defaultSize! * 30,
                             decoration: BoxDecoration(
                               color: secondColor,
-                              borderRadius: BorderRadius.circular(30),
+                              borderRadius: BorderRadius.circular(30.w),
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.shade700,
-                                  offset: Offset(4.0, 4.0),
-                                  blurRadius: 5,
-                                  spreadRadius: 1.0,
+                                  offset: Offset(4.0.h, 4.0.w),
+                                  blurRadius: 5.w,
+                                  spreadRadius: 1.0.w,
                                 )
                               ]
                             ),
@@ -324,7 +325,7 @@ class Lesson21 extends StatelessWidget {
                               child: Text(
                                 "Cotton thread / الخيوط القطنية",
                                 style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.bold,
                                   color: kMainColor,
                                 ),                           
@@ -342,7 +343,7 @@ class Lesson21 extends StatelessWidget {
                               "هي خيوط مصنوعة من القطن وهو من أهم الخيوط المستخدمة في أعمال اللاسيه والكروشيه وهو متعدد الأوزان وهو مريح يمكن غسله ويقبل الأصباغ وقابليته للمط قليلة، يصلح لتنفيذ الملابس الصيفية والمفارش، ويتم بيعها في شكل شلة صغيرة ملفوفة حول قطعة كرتون أو بلاستيك، وعادة يكون الطول بجانب الوزن مبيناً على الشلة",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,
                                                             
                               ),
@@ -365,7 +366,7 @@ class Lesson21 extends StatelessWidget {
                                 fit: BoxFit.fill
                               ),
                               color: Colors.transparent,
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(15.w),
                             ),
                           ),
                           
@@ -378,13 +379,13 @@ class Lesson21 extends StatelessWidget {
                             width: SizeConfig.defaultSize! * 30,
                             decoration: BoxDecoration(
                               color: secondColor,
-                              borderRadius: BorderRadius.circular(30),
+                              borderRadius: BorderRadius.circular(30.w),
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.shade700,
-                                  offset: Offset(4.0, 4.0),
-                                  blurRadius: 5,
-                                  spreadRadius: 1.0,
+                                  offset: Offset(4.0.h, 4.0.w),
+                                  blurRadius: 5.w,
+                                  spreadRadius: 1.0.w,
                                 )
                               ]
                             ),
@@ -392,7 +393,7 @@ class Lesson21 extends StatelessWidget {
                               child: Text(
                                 "Silk thread / الخيوط الحريرية",
                                 style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.bold,
                                   color: kMainColor,
                                 ),                           
@@ -410,7 +411,7 @@ class Lesson21 extends StatelessWidget {
                               "للحرير لمعان رائع وهو مريح جداً في اللبس ويبقي الجسم دافئ عندما يكون الطقس بارداً ومنعشاً عندما يكون الجو حاراً، غير أنه غالي الثمن وأقل مرونة مقارنة بالعديد من الخيوط الأخرى. يتميز الخيط الحريري بصلابته ولمعانه ويتوافر في شكل شلات وبكرات",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,
                                                             
                               ),
@@ -433,7 +434,7 @@ class Lesson21 extends StatelessWidget {
                                 fit: BoxFit.fill
                               ),
                               color: Colors.transparent,
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(15.w),
                             ),
                           ),
                           
@@ -446,13 +447,13 @@ class Lesson21 extends StatelessWidget {
                             width: SizeConfig.defaultSize! * 30,
                             decoration: BoxDecoration(
                               color: secondColor,
-                              borderRadius: BorderRadius.circular(30),
+                              borderRadius: BorderRadius.circular(30.w),
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.shade700,
-                                  offset: Offset(4.0, 4.0),
-                                  blurRadius: 5,
-                                  spreadRadius: 1.0,
+                                  offset: Offset(4.0.h, 4.0.w),
+                                  blurRadius: 5.w,
+                                  spreadRadius: 1.0.w,
                                 )
                               ]
                             ),
@@ -460,7 +461,7 @@ class Lesson21 extends StatelessWidget {
                               child: Text(
                                 "Wool thread / الخيوط الصوفية",
                                 style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.bold,
                                   color: kMainColor,
                                 ),                           
@@ -478,7 +479,7 @@ class Lesson21 extends StatelessWidget {
                               "الخيط الصوف من الخيوط التي تعطي قيمة عالية للأعمال المنفذة بالكروشيه. وهو متوفر بأوزان مختلفة وأنواع كثيرة فمنها الرفيع والغليظ ومنه الموهير الذي يكون له وبره عالية ويعطي شكلاً جميلاً للعمل المنفذ",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,
                                                             
                               ),
@@ -494,7 +495,7 @@ class Lesson21 extends StatelessWidget {
                               "وخيط الصوف لا يحتاج إلى كثير من العناية أكثر من الألياف الصناعية، ولكنه يعطي دفئاً أكثر وبعض الناس يعانون حساسية ضد الصوف. وتتراوح أوزان الخيوط الناتجة عن الجدل بين الخيوط الرفيعة التي سمكها 2 فتلة والخيط السميك المزدوج. وتعد خيوط الصوف السميك أو الخيوط المخلطة من الصوف والألياف الصناعية، تعد خيوطاً مناسبة جداً للتدريب على الغرز والتصميمات والأساليب المختلفة، ويتمتع الصوف بدرجة كبيرة من المرونة عندما يتم غزله على هيئة خيوط",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,
                                                             
                               ),
@@ -517,7 +518,7 @@ class Lesson21 extends StatelessWidget {
                                 fit: BoxFit.fill
                               ),
                               color: Colors.transparent,
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(15.w),
                             ),
                           ),
                           
@@ -530,13 +531,13 @@ class Lesson21 extends StatelessWidget {
                             width: SizeConfig.defaultSize! * 30,
                             decoration: BoxDecoration(
                               color: secondColor,
-                              borderRadius: BorderRadius.circular(30),
+                              borderRadius: BorderRadius.circular(30.w),
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.shade700,
-                                  offset: Offset(4.0, 4.0),
-                                  blurRadius: 5,
-                                  spreadRadius: 1.0,
+                                  offset: Offset(4.0.h, 4.0.w),
+                                  blurRadius: 5.w,
+                                  spreadRadius: 1.0.w,
                                 )
                               ]
                             ),
@@ -544,7 +545,7 @@ class Lesson21 extends StatelessWidget {
                               child: Text(
                                 "Linen thread / الخيوط الكتانية",
                                 style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.bold,
                                   color: kMainColor,
                                 ),                           
@@ -562,7 +563,7 @@ class Lesson21 extends StatelessWidget {
                               "تعطي خيوط الكتان الطبيعي قماشاً جعداً، أنيقاً ومتيناً، لكن يمكن أن يكون في بعض الأحيان قاسياً تماماً، ولذلك فهو إذا مزج مع شيء آخر يصبح عموماً أكثر نعومة",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,
                                                             
                               ),
@@ -585,7 +586,7 @@ class Lesson21 extends StatelessWidget {
                                 fit: BoxFit.fill
                               ),
                               color: Colors.transparent,
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(15.w),
                             ),
                           ),
                           
@@ -598,13 +599,13 @@ class Lesson21 extends StatelessWidget {
                             width: SizeConfig.defaultSize! * 34,
                             decoration: BoxDecoration(
                               color: secondColor,
-                              borderRadius: BorderRadius.circular(30),
+                              borderRadius: BorderRadius.circular(30.w),
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.shade700,
-                                  offset: Offset(4.0, 4.0),
-                                  blurRadius: 5,
-                                  spreadRadius: 1.0,
+                                  offset: Offset(4.0.h, 4.0.w),
+                                  blurRadius: 5.w,
+                                  spreadRadius: 1.0.w,
                                 )
                               ]
                             ),
@@ -612,7 +613,7 @@ class Lesson21 extends StatelessWidget {
                               child: Text(
                                 "Metallic thread / الخيوط المعدنية والبراق",
                                 style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.bold,
                                   color: kMainColor,
                                 ),
@@ -631,7 +632,7 @@ class Lesson21 extends StatelessWidget {
                               "أشهر أنوعها الذهبي والفضي والنحاسي وتتوافر في شكل بكارت أو شلات، والخيوط الذهبية والفضية الرفيعة ويمكن استخدامها مع خيوط أخرى لتجميل العمل المنفذ أو ينفذ العمل كاملاً منها",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,
                                                             
                               ),
@@ -654,7 +655,7 @@ class Lesson21 extends StatelessWidget {
                                 fit: BoxFit.fill
                               ),
                               color: Colors.transparent,
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(15.w),
                             ),
                           ),
                           
@@ -667,13 +668,13 @@ class Lesson21 extends StatelessWidget {
                             width: SizeConfig.defaultSize! * 34,
                             decoration: BoxDecoration(
                               color: secondColor,
-                              borderRadius: BorderRadius.circular(30),
+                              borderRadius: BorderRadius.circular(30.w),
                               boxShadow: [
                                 BoxShadow(
                                   color: Colors.grey.shade700,
-                                  offset: Offset(4.0, 4.0),
-                                  blurRadius: 5,
-                                  spreadRadius: 1.0,
+                                  offset: Offset(4.0.h, 4.0.w),
+                                  blurRadius: 5.w,
+                                  spreadRadius: 1.0.w,
                                 )
                               ]
                             ),
@@ -681,7 +682,7 @@ class Lesson21 extends StatelessWidget {
                               child: Text(
                                 "Thread of Synthetic and Blended / الخيوط السنثيتك والبراق",
                                 style: TextStyle(
-                                  fontSize: 20,
+                                  fontSize: 17.sp,
                                   fontWeight: FontWeight.bold,
                                   color: kMainColor,
                                 ),
@@ -700,7 +701,7 @@ class Lesson21 extends StatelessWidget {
                               "وهي تضم الرايون، والأورلون، والنايلون، والإكريلك، والأسيتات وهي لا تنكمش ولا تسبب الحساسية، وهذه الصفات تجعلها مفضلة في الاختيار لتنفيذ مثل بطاطين الأطفال حديثي الولادة وملابسهم كما أنه يصلح لتنفيذ مقاعد مريحة للاسترخاء",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,
                                                             
                               ),
@@ -723,7 +724,7 @@ class Lesson21 extends StatelessWidget {
                                 fit: BoxFit.fill
                               ),
                               color: Colors.transparent,
-                              borderRadius: BorderRadius.circular(15),
+                              borderRadius: BorderRadius.circular(15.w),
                             ),
                           ),
                           
@@ -738,14 +739,14 @@ class Lesson21 extends StatelessWidget {
                               width: SizeConfig.defaultSize! * 30,
                               decoration: BoxDecoration(
                                 color: thirdColor,
-                                borderRadius: BorderRadius.circular(15)
+                                borderRadius: BorderRadius.circular(15.w)
                               ),
                               child: Center(
                                 child: Text(
                                   ":أهم خصائص خيوط اللاسيه الجيدة",
                                   style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 19,
+                                    fontSize: 17.sp,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -763,7 +764,7 @@ class Lesson21 extends StatelessWidget {
                               "قوة التحمل: يجب أن يتوافر في خيوط اللاسيه خاصية قوه التحمل عند الاستخدام بحيث تكون متينة وقوية ولا تتأثر بأي شد أو إجهاد قد يقع عليها",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,
                                                             
                               ),
@@ -779,7 +780,7 @@ class Lesson21 extends StatelessWidget {
                               "ثبات البرم: لابد وان تكون البرمات ثابتة في خيط اللاسيه الجيد حتى لا يحدث لها التواء على بعضها أثناء العمل وبالتالي تسبب إعاقة أثناء عملية التنفيذ",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,
                                                             
                               ),
@@ -795,7 +796,7 @@ class Lesson21 extends StatelessWidget {
                               "الثبات ضد الانكماش: لابد وان يكون خيط اللاسيه معالجا ومجهزا ضد الانكماش فلا يتأثر بعمليات الغسيل والكي التي تجري على القطعة المنفذة وبخاصة في الألياف الطبيعية فلا يؤثر ذلك على مظهرية اللاسيه وجودته",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,
                                                             
                               ),
@@ -811,7 +812,7 @@ class Lesson21 extends StatelessWidget {
                               "معامل الاحتكاك: يجب أن يراعى في خيط اللاسيه درجة تحمله لعمليات الاحتكاك التي تجري اثناء عملية التنفيذ وبالتالي لا يصاب بتلف لذا لابد وان يتوافر فيه درجة نعومه في الملمس جيده",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,
                                                             
                               ),
@@ -827,7 +828,7 @@ class Lesson21 extends StatelessWidget {
                               "ثبات اللون: يجب الا يتأثر خيط اللاسيه بالمذيبات العضوية المستخدمة أثناء التنظيف وبالمنظفات أثناء الغسيل العادي ولا بالمؤثرات الجوية المختلفة كضوء الشمس والحرارة أثناء الكي",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,
                                                             
                               ),
@@ -843,7 +844,7 @@ class Lesson21 extends StatelessWidget {
                               "الاستطالة: لابد وأن يتوافر في خيط اللاسيه الجيد نسبة مقننه من التمدد ليكون مرنا وسهل التشكيل أثناء العمل به",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,
                                                             
                               ),
@@ -860,14 +861,14 @@ class Lesson21 extends StatelessWidget {
                               width: SizeConfig.defaultSize! * 18,
                               decoration: BoxDecoration(
                                 color: thirdColor,
-                                borderRadius: BorderRadius.circular(15)
+                                borderRadius: BorderRadius.circular(15.w)
                               ),
                               child: Center(
                                 child: Text(
                                   ":خامات التقوية",
                                   style: TextStyle(
                                     color: Colors.white,
-                                    fontSize: 19,
+                                    fontSize: 17.sp,
                                     fontWeight: FontWeight.bold,
                                   ),
                                 ),
@@ -885,7 +886,7 @@ class Lesson21 extends StatelessWidget {
                               "هي قطع من خامات التدعيم تضاف إلى القماش عبر أجزاء معينة تحتاج إلى تقوية، وهي تلك الخامات التي تستخدم بغرض تدعيم الأقمشة قبل تطريزها أما بشكل موقت حتى الانتهاء من تطريزها أو بشكل دائم لتحقيق متطلبات جمالية ووظيفية معينة",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,
                                                             
                               ),
@@ -901,7 +902,7 @@ class Lesson21 extends StatelessWidget {
                               "وتتنوع خامات التقوية من حيث طريقة تثبيتها ما بين اللاصق وغير اللاصق، كما وأن خامات التقوية لابد وأن تتناسب في سمكها مع الأقمشة المراد تقويتها",
                               style: TextStyle(
                                 color: kMainColor,
-                                fontSize: 17,
+                                fontSize: 15.sp,
                                 fontWeight: FontWeight.bold,
                                                             
                               ),
@@ -924,13 +925,13 @@ class Lesson21 extends StatelessWidget {
                       width: SizeConfig.defaultSize! * 23,
                       decoration: BoxDecoration(
                         color: firstColor,
-                        borderRadius: BorderRadius.circular(30),
+                        borderRadius: BorderRadius.circular(30.w),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.shade700,
-                            offset: Offset(4.0, 4.0),
-                            blurRadius: 5,
-                            spreadRadius: 1.0,
+                            offset: Offset(4.0.h, 4.0.w),
+                            blurRadius: 5.w,
+                            spreadRadius: 1.0.w,
                           )
                         ]
                       ),
@@ -938,7 +939,7 @@ class Lesson21 extends StatelessWidget {
                         child: Text(
                           "الخامات المستخدمة",
                           style: TextStyle(
-                            fontSize: 22,
+                            fontSize: 19.sp,
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
                           ),                           
@@ -950,6 +951,10 @@ class Lesson21 extends StatelessWidget {
                 ],
               ),
             ),
+
+            SizedBox(
+              height: SizeConfig.defaultSize! * 3,
+            )
           ],
         ),
 

@@ -3,6 +3,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -21,14 +22,14 @@ class HomePage extends StatelessWidget {
                   width: SizeConfig.screenWidth,
                   decoration: BoxDecoration(
                     color: kMainColor,
-                    borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20), bottomRight: Radius.circular(20)),
+                    borderRadius: BorderRadius.only(bottomLeft: Radius.circular(20.w), bottomRight: Radius.circular(20.w)),
                   ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [                 
                       CircleAvatar(
                         backgroundImage: AssetImage("assets/images/first_onBoarding.png"),
-                        radius: 45,
+                        radius: 42.w,
                       ),
         
                       Column(
@@ -40,7 +41,7 @@ class HomePage extends StatelessWidget {
                           Text(
                             "مفروشات من",
                             style: TextStyle(
-                              fontSize: 30,
+                              fontSize: 27.sp,
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                             ),
@@ -49,7 +50,7 @@ class HomePage extends StatelessWidget {
                           Text(
                             "اللاسيه الروماني",
                             style: TextStyle(
-                              fontSize: 30,
+                              fontSize: 28.sp,
                               fontWeight: FontWeight.bold,
                               color: Colors.white,
                             ),
@@ -66,34 +67,36 @@ class HomePage extends StatelessWidget {
         
                 Container(
                   width: SizeConfig.screenWidth,
+                  height: SizeConfig.defaultSize! * 17,
                   color: Colors.transparent,
                   child: Stack(
-                    children: [                    
-                      Padding(
-                        padding: const EdgeInsets.only(left: 40, top: 45),
+                    children: [
+                      Positioned(
+                        top: SizeConfig.defaultSize! * 4.5,
+                        left: SizeConfig.defaultSize! * 4.5,
                         child: Container(
                           height: SizeConfig.defaultSize! * 12,
                           width: SizeConfig.defaultSize! * 35,
                           decoration: BoxDecoration(
                             color: thirdColor,
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(20.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 15.0,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 15.0.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
                           
                           child: Padding(
-                            padding: const EdgeInsets.only(top: 30.0, right: 15, left: 80),
+                            padding: const EdgeInsets.only(top: 30.0, right: 15, left: 15),
                             child: Text(
                               "إكساب الخريجات مهارات تنفيذ فن اللاسيه الروماني",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 18,
+                                fontSize: 17.sp,
                                 fontWeight: FontWeight.bold,                             
                               ),
                               textAlign: TextAlign.end,
@@ -101,7 +104,7 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                       ),
-                
+                                
                       Positioned(
                         left: SizeConfig.defaultSize! * 20,
                         top: SizeConfig.defaultSize! * 2,
@@ -110,13 +113,13 @@ class HomePage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 20,
                           decoration: BoxDecoration(
                             color: firstColor,
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(30.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 5,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 5.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -124,7 +127,7 @@ class HomePage extends StatelessWidget {
                             child: Text(
                               "الهدف من التطبيق",
                               style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 19.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           
@@ -152,13 +155,13 @@ class HomePage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 37,
                           decoration: BoxDecoration(
                             color: secondColor,
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(20.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 15.0,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 15.0.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -171,7 +174,7 @@ class HomePage extends StatelessWidget {
                                   "التعرف علي فن اللاسيه الروماني و تاريخه",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.5.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -184,7 +187,7 @@ class HomePage extends StatelessWidget {
                                   "التعريف باللاسيه الروماني وخطوات تنفيذه",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.5.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -197,7 +200,7 @@ class HomePage extends StatelessWidget {
                                   "شرح الأدوات والخامات التي تستخدم في تنفيذ فن اللاسيه الروماني",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.5.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -209,19 +212,19 @@ class HomePage extends StatelessWidget {
                                   "تنفيذ الغرز المستخدمة في فن اللاسيه الروماني",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.5.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(top: 5.0, right: 20, left: 10),
+                                padding: const EdgeInsets.only(top: 2.0, right: 20, left: 10),
                                 child: Text(
                                   "التدريب على انتاج المفروشات باستخدام اللاسيه الروماني",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.5.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -241,13 +244,13 @@ class HomePage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 20,
                           decoration: BoxDecoration(
                             color: firstColor,
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(30.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 5,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 5.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -255,7 +258,7 @@ class HomePage extends StatelessWidget {
                             child: Text(
                               "الأهداف التعليمية",
                               style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 19.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           
@@ -283,13 +286,13 @@ class HomePage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 37,
                           decoration: BoxDecoration(
                             color: secondColor,
-                            borderRadius: BorderRadius.circular(20),
+                            borderRadius: BorderRadius.circular(20.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 15.0,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 15.0.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -308,7 +311,7 @@ class HomePage extends StatelessWidget {
                                       padding: const EdgeInsets.only(top: 10),
                                       child: Container(
                                         decoration: BoxDecoration(
-                                          borderRadius: BorderRadius.circular(20),
+                                          borderRadius: BorderRadius.circular(20.w),
                                           color: thirdColor,
                                         ),
                                         height: SizeConfig.defaultSize! * 17,
@@ -318,12 +321,12 @@ class HomePage extends StatelessWidget {
                                           children: [
                                             CircleAvatar(
                                               backgroundImage: AssetImage("assets/images/second_onBoarding.png"),
-                                              radius: 40,
+                                              radius: 35.w,
                                             ),
                                             Text(
                                               "الأدوات والخامات المستخدمة",
                                               style: TextStyle(
-                                                fontSize: 18,
+                                                fontSize: 15.sp,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.white,
                                               ),
@@ -352,12 +355,12 @@ class HomePage extends StatelessWidget {
                                           children: [
                                             CircleAvatar(
                                               backgroundImage: AssetImage("assets/images/first_onBoarding.png"),
-                                              radius: 40,
+                                              radius: 35.w,
                                             ),
                                             Text(
                                               "التعريف باللاسيه الروماني",
                                               style: TextStyle(
-                                                fontSize: 18,
+                                                fontSize: 15.sp,
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.white,
                                               ),
@@ -390,12 +393,12 @@ class HomePage extends StatelessWidget {
                                         children: [
                                           CircleAvatar(
                                             backgroundImage: AssetImage("assets/images/fourth_onBoarding.png"),
-                                            radius: 40,
+                                            radius: 35.w,
                                           ),
                                           Text(
                                             "الغرز والتقنيات المستخدمة",
                                             style: TextStyle(
-                                              fontSize: 18,
+                                              fontSize: 15.sp,
                                               fontWeight: FontWeight.bold,
                                               color: Colors.white,
                                             ),
@@ -421,12 +424,12 @@ class HomePage extends StatelessWidget {
                                         children: [
                                           CircleAvatar(
                                             backgroundImage: AssetImage("assets/images/splash.png"),
-                                            radius: 40,
+                                            radius: 35.w,
                                           ),
                                           Text(
                                             "خطوات تنفيذ اللاسيه الروماني",
                                             style: TextStyle(
-                                              fontSize: 18,
+                                              fontSize: 15.sp,
                                               fontWeight: FontWeight.bold,
                                               color: Colors.white,
                                             ),
@@ -453,13 +456,13 @@ class HomePage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 20,
                           decoration: BoxDecoration(
                             color: firstColor,
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(30.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 5,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 5.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -467,7 +470,7 @@ class HomePage extends StatelessWidget {
                             child: Text(
                               "موضوعات التعلم",
                               style: TextStyle(
-                                fontSize: 20,
+                                fontSize: 19.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           

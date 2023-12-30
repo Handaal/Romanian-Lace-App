@@ -6,6 +6,7 @@ import 'package:app_2/screens/about.dart';
 import 'package:app_2/screens/home.dart';
 import 'package:app_2/screens/policy.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -37,7 +38,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
           color: kMainColor,
-          borderRadius: BorderRadius.only(topLeft: Radius.circular(15), topRight: Radius.circular(15)),
+          borderRadius: BorderRadius.only(topLeft: Radius.circular(15.w), topRight: Radius.circular(15.w)),
         ),        
         child: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 3),
@@ -57,7 +58,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
                 text: 'الرئيسية',
                 textStyle: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 16
+                  fontSize: 14.sp,
                 ),
               ),
               GButton(
@@ -65,7 +66,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
                 text: 'عن التطبيق',
                 textStyle: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 16
+                  fontSize: 14.sp,
                 ),
               ),
               GButton(
@@ -73,7 +74,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
                 text: 'القائم بالتنفيذ',
                 textStyle: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 16
+                  fontSize: 14.sp,
                 ),
               ),
             ],

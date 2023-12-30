@@ -4,6 +4,7 @@ import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:app_2/features/onBoarding/widgets/content_model.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class OnBoardingBody extends StatefulWidget {
   const OnBoardingBody({super.key});
@@ -39,7 +40,7 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
               width: SizeConfig.screenWidth,
               decoration: BoxDecoration(
                 color: kMainColor,
-                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(10), bottomRight: Radius.circular(10))
+                borderRadius: BorderRadius.only(bottomLeft: Radius.circular(10.w), bottomRight: Radius.circular(10.w))
               ),
             ),
             
@@ -60,7 +61,7 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
 
                         CircleAvatar(
                           backgroundImage:AssetImage(contents[i].image),
-                          radius: 120,
+                          radius: 100.w,
                         ),
 
                         SizedBox(
@@ -70,7 +71,7 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
                         Text(
                           contents[i].title,
                           style: TextStyle(
-                            fontSize: 28,
+                            fontSize: 22.sp,
                             fontWeight: FontWeight.bold,
                             color: kMainColor,
                           ),
@@ -98,7 +99,7 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
                       child: Text(
                         "تخطي",
                         style: TextStyle(
-                          fontSize: 20,
+                          fontSize: 17.sp,
                           fontWeight: FontWeight.bold,
                           color: thirdColor,
                         ),
@@ -131,7 +132,7 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
                         width: SizeConfig.defaultSize! * 7,
                         height: SizeConfig.defaultSize! * 7,
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25),
+                          borderRadius: BorderRadius.circular(25.w),
                           color: Colors.transparent,
                         ),
                         child: Center(
@@ -153,7 +154,7 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
               width: SizeConfig.screenWidth,
               decoration: BoxDecoration(
                 color: firstColor,
-                borderRadius: BorderRadius.only(topLeft: Radius.circular(10), topRight: Radius.circular(10))
+                borderRadius: BorderRadius.only(topLeft: Radius.circular(10.w), topRight: Radius.circular(10.w))
               ),
             ),        
           ],
@@ -164,10 +165,10 @@ class _OnBoardingBodyState extends State<OnBoardingBody> {
   Container buildDot(int index, BuildContext context) {
     return Container(
       height: SizeConfig.defaultSize! * 1,
-      width: currentIndex == index ? 25 : 10,
-      margin: EdgeInsets.only(right: 5),
+      width: currentIndex == index ? 25.w : 10.w,
+      margin: EdgeInsets.only(right: 5.w),
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20),
+        borderRadius: BorderRadius.circular(20.w),
         color: thirdColor,
       ),
     );

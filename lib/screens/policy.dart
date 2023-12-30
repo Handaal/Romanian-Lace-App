@@ -3,6 +3,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class PolicyPage extends StatelessWidget {
   const PolicyPage({super.key});
@@ -19,7 +20,7 @@ class PolicyPage extends StatelessWidget {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(8),
             child: Container(
-              height: 1.0,
+              height: 1.0.h,
               color: Colors.grey.withOpacity(0.5),
             )
           ),
@@ -28,7 +29,7 @@ class PolicyPage extends StatelessWidget {
               "القائم بالتنفيذ",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                fontSize: 22.sp,
               ),
             ),
           ),
@@ -77,7 +78,7 @@ class PolicyPage extends StatelessWidget {
                                   "محاضر بقسم تصميم ازياء",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 17.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -90,7 +91,7 @@ class PolicyPage extends StatelessWidget {
                                   "كلية التصاميم - جامعة القصيم",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 17.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -103,7 +104,7 @@ class PolicyPage extends StatelessWidget {
                                   ":وسائل التواصل",
                                   style: TextStyle(
                                     color: firstColor,
-                                    fontSize: 18,
+                                    fontSize: 17.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -118,7 +119,7 @@ class PolicyPage extends StatelessWidget {
                                     Text(
                                       "0506619164",
                                       style: TextStyle(
-                                        fontSize: 18,
+                                        fontSize: 16.sp,
                                         fontWeight: FontWeight.bold,
                                         color: kMainColor
                                       ),
@@ -131,7 +132,7 @@ class PolicyPage extends StatelessWidget {
                                     Text(
                                       ":واتساب",
                                       style: TextStyle(
-                                        fontSize: 18,
+                                        fontSize: 16.sp,
                                         fontWeight: FontWeight.bold,
                                         color: kMainColor
                                       ),
@@ -142,14 +143,14 @@ class PolicyPage extends StatelessWidget {
                               ),
 
                               Padding(
-                                padding: const EdgeInsets.only(left: 50),
+                                padding: const EdgeInsets.only(left: 55),
                                 child: Row(
                                   children: [
                                 
                                     Text(
                                       "mhdieb@qu.edu.sa",
                                       style: TextStyle(
-                                        fontSize: 18,
+                                        fontSize: 16.sp,
                                         fontWeight: FontWeight.bold,
                                         color: kMainColor
                                       ),
@@ -162,7 +163,7 @@ class PolicyPage extends StatelessWidget {
                                     Text(
                                       ":البريد الإلكتروني",
                                       style: TextStyle(
-                                        fontSize: 18,
+                                        fontSize: 16.sp,
                                         fontWeight: FontWeight.bold,
                                         color: kMainColor
                                       ),
@@ -196,7 +197,7 @@ class PolicyPage extends StatelessWidget {
                             child: Text(
                               "أ/ مشاعل علي الهديب",
                               style: TextStyle(
-                                fontSize: 22,
+                                fontSize: 20.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           
@@ -246,7 +247,7 @@ class PolicyPage extends StatelessWidget {
                                       "أستاذ الملابس والنسيج المساعد",
                                       style: TextStyle(
                                         color: kMainColor,
-                                        fontSize: 18,
+                                        fontSize: 17.sp,
                                         fontWeight: FontWeight.bold,                             
                                       ),
                                       textAlign: TextAlign.end,
@@ -259,7 +260,7 @@ class PolicyPage extends StatelessWidget {
                                       "كلية تربية نوعية - جامعة أسيوط",
                                       style: TextStyle(
                                         color: kMainColor,
-                                        fontSize: 18,
+                                        fontSize: 17.sp,
                                         fontWeight: FontWeight.bold,                             
                                       ),
                                       textAlign: TextAlign.end,
@@ -272,7 +273,7 @@ class PolicyPage extends StatelessWidget {
                                       ":وسائل التواصل",
                                       style: TextStyle(
                                         color: firstColor,
-                                        fontSize: 18,
+                                        fontSize: 17.sp,
                                         fontWeight: FontWeight.bold,                             
                                       ),
                                       textAlign: TextAlign.end,
@@ -287,7 +288,7 @@ class PolicyPage extends StatelessWidget {
                                         Text(
                                           "01013304403",
                                           style: TextStyle(
-                                            fontSize: 18,
+                                            fontSize: 16.sp,
                                             fontWeight: FontWeight.bold,
                                             color: kMainColor
                                           ),
@@ -300,7 +301,7 @@ class PolicyPage extends StatelessWidget {
                                         Text(
                                           ":واتساب",
                                           style: TextStyle(
-                                            fontSize: 18,
+                                            fontSize: 16.sp,
                                             fontWeight: FontWeight.bold,
                                             color: kMainColor
                                           ),
@@ -311,14 +312,14 @@ class PolicyPage extends StatelessWidget {
                                   ),
 
                                   Padding(
-                                    padding: const EdgeInsets.only(left: 30),
+                                    padding: const EdgeInsets.only(left: 32),
                                     child: Row(
                                       children: [
                                     
                                         Text(
                                           "ragaaegp@yahoo.com",
                                           style: TextStyle(
-                                            fontSize: 18,
+                                            fontSize: 16.sp,
                                             fontWeight: FontWeight.bold,
                                             color: kMainColor
                                           ),
@@ -331,7 +332,7 @@ class PolicyPage extends StatelessWidget {
                                         Text(
                                           ":البريد الإلكتروني",
                                           style: TextStyle(
-                                            fontSize: 18,
+                                            fontSize: 16.sp,
                                             fontWeight: FontWeight.bold,
                                             color: kMainColor
                                           ),

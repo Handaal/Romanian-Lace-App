@@ -4,6 +4,7 @@ import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:app_2/features/onBoarding/on_boarding_view.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
 class SplashViewBody extends StatefulWidget {
@@ -110,7 +111,7 @@ class _SplashViewBodyState extends State<SplashViewBody> with TickerProviderStat
         
                 CircleAvatar(
                   backgroundImage: AssetImage("assets/images/splash.png"),
-                  radius: 140,
+                  radius: 120.w,
                 ),
         
                 SizedBox(
@@ -124,7 +125,7 @@ class _SplashViewBodyState extends State<SplashViewBody> with TickerProviderStat
                     child: Text(
                       'مفروشات من اللاسيه الروماني',
                       style: TextStyle(
-                        fontSize: 40,
+                        fontSize: 30.sp,
                         fontWeight: FontWeight.bold,
                         color: secondColor,
                       ),

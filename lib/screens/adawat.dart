@@ -3,6 +3,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class FirstPage extends StatelessWidget {
   const FirstPage({super.key});
@@ -18,7 +19,7 @@ class FirstPage extends StatelessWidget {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(8),
             child: Container(
-              height: 1.0,
+              height: 1.0.h,
               color: Colors.grey.withOpacity(0.5),
             )
           ),
@@ -28,7 +29,7 @@ class FirstPage extends StatelessWidget {
               "الأدوات والخامات المستخدمة",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                fontSize: 20.sp,
               ),
             ),
           ),
@@ -55,13 +56,13 @@ class FirstPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 37,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(40),
+                            borderRadius: BorderRadius.circular(40.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 15.0,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 15.0.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -74,7 +75,7 @@ class FirstPage extends StatelessWidget {
                                   "الأدوات والخامات المستخدمة في فن اللاسيه الروماني",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 17,
+                                    fontSize: 15.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -95,7 +96,7 @@ class FirstPage extends StatelessWidget {
                                     fit: BoxFit.fill,
                                   ),
                                   color: Colors.transparent,
-                                  borderRadius: BorderRadius.circular(15),
+                                  borderRadius: BorderRadius.circular(15.w),
                                 ),
                               ),
                               
@@ -113,13 +114,13 @@ class FirstPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 20,
                           decoration: BoxDecoration(
                             color: thirdColor,
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(30.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 5,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 5.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -127,7 +128,7 @@ class FirstPage extends StatelessWidget {
                             child: Text(
                               "الدرس الثاني",
                               style: TextStyle(
-                                fontSize: 22,
+                                fontSize: 19.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           
@@ -159,9 +160,9 @@ class FirstPage extends StatelessWidget {
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 15.0,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 15.0.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -174,7 +175,7 @@ class FirstPage extends StatelessWidget {
                                   "التعرف علي الأدوات والخامات المستخدمة في تنفيذ اللاسيه الروماني",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -186,7 +187,7 @@ class FirstPage extends StatelessWidget {
                                   "شرح الأدوات والخامات المستخدمة في فن اللاسيه الروماني",
                                   style: TextStyle(
                                     color: kMainColor,
-                                    fontSize: 18,
+                                    fontSize: 16.sp,
                                     fontWeight: FontWeight.bold,                             
                                   ),
                                   textAlign: TextAlign.end,
@@ -205,13 +206,13 @@ class FirstPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 20,
                           decoration: BoxDecoration(
                             color: firstColor,
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(30.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 5,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 5.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -219,7 +220,7 @@ class FirstPage extends StatelessWidget {
                             child: Text(
                               "أهداف الدرس",
                               style: TextStyle(
-                                fontSize: 22,
+                                fontSize: 19.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           
@@ -247,13 +248,13 @@ class FirstPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 40,
                           decoration: BoxDecoration(
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(40),
+                            borderRadius: BorderRadius.circular(40.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 15.0,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 15.0.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -268,7 +269,7 @@ class FirstPage extends StatelessWidget {
                                   width: SizeConfig.defaultSize! * 38,
                                   decoration: BoxDecoration(
                                     color: secondColor,
-                                    borderRadius: BorderRadius.circular(20),
+                                    borderRadius: BorderRadius.circular(20.w),
                                   ),
                                 
                                   child: Stack(
@@ -285,14 +286,14 @@ class FirstPage extends StatelessWidget {
                                             width: SizeConfig.defaultSize! * 11,
                                             decoration: BoxDecoration(
                                               color: kMainColor,
-                                              borderRadius: BorderRadius.circular(15),
+                                              borderRadius: BorderRadius.circular(15.w),
                                             ),
                                             child: Center(
                                               child: Text(
                                                 "المزيد",
                                                 style: TextStyle(
                                                   color: Colors.white,
-                                                  fontSize: 17,
+                                                  fontSize: 15.sp,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
@@ -318,7 +319,7 @@ class FirstPage extends StatelessWidget {
                                                     child: Text(
                                                       "الخامات المستخدمة في تنفيذ اللاسيه الروماني",
                                                       style: TextStyle(
-                                                        fontSize: 18,
+                                                        fontSize: 16.sp,
                                                         fontWeight: FontWeight.bold,
                                                         color: kMainColor,
                                                       ),
@@ -347,7 +348,7 @@ class FirstPage extends StatelessWidget {
                                                   fit: BoxFit.fill
                                                 ),
                                                 color: Colors.transparent,
-                                                borderRadius: BorderRadius.circular(15),
+                                                borderRadius: BorderRadius.circular(15.w),
                                               ),
                                                                       
                                             ),
@@ -366,7 +367,7 @@ class FirstPage extends StatelessWidget {
                                   width: SizeConfig.defaultSize! * 38,
                                   decoration: BoxDecoration(
                                     color: secondColor,
-                                    borderRadius: BorderRadius.circular(20),
+                                    borderRadius: BorderRadius.circular(20.w),
                                   ),
                                 
                                   child: Stack(
@@ -383,14 +384,14 @@ class FirstPage extends StatelessWidget {
                                             width: SizeConfig.defaultSize! * 11,
                                             decoration: BoxDecoration(
                                               color: kMainColor,
-                                              borderRadius: BorderRadius.circular(15),
+                                              borderRadius: BorderRadius.circular(15.w),
                                             ),
                                             child: Center(
                                               child: Text(
                                                 "المزيد",
                                                 style: TextStyle(
                                                   color: Colors.white,
-                                                  fontSize: 17,
+                                                  fontSize: 15.sp,
                                                   fontWeight: FontWeight.bold,
                                                 ),
                                               ),
@@ -416,7 +417,7 @@ class FirstPage extends StatelessWidget {
                                                     child: Text(
                                                       "شرح الأدوات والخامات المستخدمة في فن اللاسيه الروماني",
                                                       style: TextStyle(
-                                                        fontSize: 18,
+                                                        fontSize: 16.sp,
                                                         fontWeight: FontWeight.bold,
                                                         color: kMainColor,
                                                       ),
@@ -445,7 +446,7 @@ class FirstPage extends StatelessWidget {
                                                   fit: BoxFit.fill
                                                 ),
                                                 color: Colors.transparent,
-                                                borderRadius: BorderRadius.circular(15),
+                                                borderRadius: BorderRadius.circular(15.w),
                                               ),
                                                                       
                                             ),
@@ -470,13 +471,13 @@ class FirstPage extends StatelessWidget {
                           width: SizeConfig.defaultSize! * 20,
                           decoration: BoxDecoration(
                             color: firstColor,
-                            borderRadius: BorderRadius.circular(30),
+                            borderRadius: BorderRadius.circular(30.w),
                             boxShadow: [
                               BoxShadow(
                                 color: Colors.grey.shade700,
-                                offset: Offset(4.0, 4.0),
-                                blurRadius: 5,
-                                spreadRadius: 1.0,
+                                offset: Offset(4.0.h, 4.0.w),
+                                blurRadius: 5.w,
+                                spreadRadius: 1.0.w,
                               )
                             ]
                           ),
@@ -484,7 +485,7 @@ class FirstPage extends StatelessWidget {
                             child: Text(
                               "موضوعات الدرس",
                               style: TextStyle(
-                                fontSize: 22,
+                                fontSize: 19.sp,
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
                               ),                           

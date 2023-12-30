@@ -3,6 +3,7 @@
 import 'package:app_2/core/utils/size_config.dart';
 import 'package:app_2/core/widgets/constants.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 // import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
@@ -47,7 +48,7 @@ class _Lesson32State extends State<Lesson32> {
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(8),
             child: Container(
-              height: 1.0,
+              height: 1.0.h,
               color: Colors.grey.withOpacity(0.5),
             )
           ),
@@ -57,7 +58,7 @@ class _Lesson32State extends State<Lesson32> {
               "خطوات تنفيذ اللاسيه الروماني",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 23,
+                fontSize: 21.sp,
               ),
             ),
           ),
@@ -82,13 +83,13 @@ class _Lesson32State extends State<Lesson32> {
                       width: SizeConfig.defaultSize! * 30,
                       decoration: BoxDecoration(
                         color: firstColor,
-                        borderRadius: BorderRadius.circular(20),
+                        borderRadius: BorderRadius.circular(20.w),
                         boxShadow: [
                           BoxShadow(
                             color: Colors.grey.shade700,
-                            offset: Offset(4.0, 4.0),
-                            blurRadius: 10.0,
-                            spreadRadius: 1.0,
+                            offset: Offset(4.0.h, 4.0.w),
+                            blurRadius: 10.0.w,
+                            spreadRadius: 1.0.w,
                           )
                         ]
                       ),
@@ -97,7 +98,7 @@ class _Lesson32State extends State<Lesson32> {
                           ":خطوات تثبيت اللاسيه الروماني",
                           style: TextStyle(
                             color: Colors.white,
-                            fontSize: 20,
+                            fontSize: 19.sp,
                             fontWeight: FontWeight.bold,
                           ),
                         ),
@@ -111,7 +112,7 @@ class _Lesson32State extends State<Lesson32> {
                       "إعداد الشريط باستخدام إبرة الكروشيه",
                       style: TextStyle(
                         color: kMainColor,
-                        fontSize: 17,
+                        fontSize: 15.sp,
                         fontWeight: FontWeight.bold,
                       ),
                       textAlign: TextAlign.justify,
@@ -125,7 +126,7 @@ class _Lesson32State extends State<Lesson32> {
                       "نقل التصميم المراد تنفيذه على ورق مقوى",
                       style: TextStyle(
                         color: kMainColor,
-                        fontSize: 17,
+                        fontSize: 15.sp,
                         fontWeight: FontWeight.bold,
                       ),
                       textAlign: TextAlign.justify,
@@ -139,7 +140,7 @@ class _Lesson32State extends State<Lesson32> {
                       "تثبيت الشريط السابق تنفيذه على حدود التصميم الخارجية بغرزة السراجة",
                       style: TextStyle(
                         color: kMainColor,
-                        fontSize: 17,
+                        fontSize: 15.sp,
                         fontWeight: FontWeight.bold,
                       ),
                       textAlign: TextAlign.justify,
@@ -153,7 +154,7 @@ class _Lesson32State extends State<Lesson32> {
                       "تنفيذ البريد الموجود بالتصميم",
                       style: TextStyle(
                         color: kMainColor,
-                        fontSize: 17,
+                        fontSize: 15.sp,
                         fontWeight: FontWeight.bold,
                       ),
                       textAlign: TextAlign.justify,
@@ -167,7 +168,7 @@ class _Lesson32State extends State<Lesson32> {
                       "تثبيت كل ضلعين متماسين بغرز اللفق المسحورة",
                       style: TextStyle(
                         color: kMainColor,
-                        fontSize: 17,
+                        fontSize: 15.sp,
                         fontWeight: FontWeight.bold,
                       ),
                       textAlign: TextAlign.justify,
@@ -181,7 +182,7 @@ class _Lesson32State extends State<Lesson32> {
                       "تنفذ بعد ذلك الغرز الموجودة بالتصميم",
                       style: TextStyle(
                         color: kMainColor,
-                        fontSize: 17,
+                        fontSize: 15.sp,
                         fontWeight: FontWeight.bold,
                       ),
                       textAlign: TextAlign.justify,
@@ -195,7 +196,7 @@ class _Lesson32State extends State<Lesson32> {
                       "بعد الانتهاء يرفع التصميم من الورق المقوى وينظف من بقايا الخيوط. كما موضح بالصورة",
                       style: TextStyle(
                         color: kMainColor,
-                        fontSize: 17,
+                        fontSize: 15.sp,
                         fontWeight: FontWeight.bold,
                       ),
                       textAlign: TextAlign.justify,
@@ -216,7 +217,7 @@ class _Lesson32State extends State<Lesson32> {
                         fit: BoxFit.fill
                       ),
                       color: Colors.transparent,
-                      borderRadius: BorderRadius.circular(15),
+                      borderRadius: BorderRadius.circular(15.w),
                     ),
                   ),
 
@@ -259,7 +260,7 @@ class _Lesson32State extends State<Lesson32> {
                             child: Text(
                               ":فيديو توضيحي لخطوات تثبيت شريط اللاسيه",
                               style: TextStyle(
-                                fontSize: 18,
+                                fontSize: 16.sp,
                                 fontWeight: FontWeight.bold,
                                 color: kMainColor,
                               ),
